@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bljgyv81r06u"]
+
+[resource]
+resource_name = "BrownDark"
+albedo_color = Color(0.627451, 0.658824, 0.788235, 1)

@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bkj4hukqk7scq"]
+
+[ext_resource type="Shader" uid="uid://dslmsmj6aawg8" path="res://Materials/Gradient.gdshader" id="1_irokr"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_irokr")
+shader_parameter/color_a = Color(0.784314, 0.521569, 0.372549, 1)
+shader_parameter/color_b = Color(0.854902, 0.682353, 0.494118, 1)
