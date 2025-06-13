@@ -7,9 +7,9 @@
 [ext_resource type="Material" uid="uid://bq213p4y7xtm" path="res://Materials/Rock.tres" id="5_t3ycx"]
 [ext_resource type="Material" uid="uid://c5xvhbv50vyft" path="res://Materials/Sand.tres" id="6_7icd6"]
 [ext_resource type="Material" uid="uid://bljgyv81r06u" path="res://Materials/City.tres" id="7_pa43o"]
-[ext_resource type="Material" uid="uid://dvjtu5x1hb2t1" path="res://Materials/ForestToLand.tres" id="8_agcc3"]
-[ext_resource type="Material" uid="uid://yh7logyfk6qr" path="res://Materials/LandToRock.tres" id="9_2bk65"]
-[ext_resource type="Material" uid="uid://bkj4hukqk7scq" path="res://Materials/RockToSand.tres" id="10_bi63p"]
+[ext_resource type="Material" uid="uid://cqxokfrs5conn" path="res://Materials/ForestToLand.tres" id="8_agcc3"]
+[ext_resource type="Material" uid="uid://drfiwxg2o18lf" path="res://Materials/LandToRock.tres" id="9_2bk65"]
+[ext_resource type="Material" uid="uid://dimr371b1bi2n" path="res://Materials/RockToSand.tres" id="10_bi63p"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_b0dua"]
 _surfaces = [{
@@ -1873,7 +1873,7 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_cf867")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_btt5p"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_mmgjp"]
 resource_name = "TileShader_Cube_901"
 _surfaces = [{
 "aabb": AABB(-1, 0, -1, 2, 1, 2),
@@ -1940,7 +1940,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_mmgjp"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_8x2lq"]
 resource_name = "TileShader_detailed_Cube_001"
 _surfaces = [{
 "aabb": AABB(-1, 0.5, -1, 2, 0.5, 2),
@@ -2267,7 +2267,7 @@ skeleton = NodePath("")
 
 [node name="square_plainToRock" type="MeshInstance3D" parent="gradient"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
-mesh = SubResource("ArrayMesh_btt5p")
+mesh = SubResource("ArrayMesh_mmgjp")
 skeleton = NodePath("")
 
 [node name="square_rockToSand" type="MeshInstance3D" parent="gradient"]
@@ -2277,7 +2277,7 @@ skeleton = NodePath("")
 
 [node name="square_forestToPlain_detail" type="MeshInstance3D" parent="gradient"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3, 0, 0)
-mesh = SubResource("ArrayMesh_mmgjp")
+mesh = SubResource("ArrayMesh_8x2lq")
 skeleton = NodePath("")
 
 [node name="square_plainToRock_detail" type="MeshInstance3D" parent="gradient"]

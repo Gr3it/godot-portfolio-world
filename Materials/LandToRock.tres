@@ -1,9 +1,13 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://yh7logyfk6qr"]
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://drfiwxg2o18lf"]
 
-[ext_resource type="Shader" uid="uid://dslmsmj6aawg8" path="res://Materials/Gradient.gdshader" id="1_pgxri"]
+[sub_resource type="Gradient" id="Gradient_w1i3w"]
+colors = PackedColorArray(0.556863, 0.85098, 0.639216, 1, 0.784314, 0.521569, 0.372549, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pgxri"]
+resource_name = "Material_8.001_albedo"
+gradient = SubResource("Gradient_w1i3w")
 
 [resource]
-render_priority = 0
-shader = ExtResource("1_pgxri")
-shader_parameter/color_a = Color(0.556863, 0.85098, 0.639216, 1)
-shader_parameter/color_b = Color(0.784314, 0.521569, 0.372549, 1)
+resource_name = "Material_8.001"
+albedo_texture = SubResource("GradientTexture1D_pgxri")
+texture_repeat = false
