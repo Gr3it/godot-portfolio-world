@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c4b2gu2j84bl6"
-path="res://.godot/imported/TileShader.glb-e652468cc2b424a44128834b7423fb12.scn"
+uid="uid://hbac3jeu3dji"
+path="res://.godot/imported/square_gradient_detailed_corner_A.glb-94e90baef6f6629be83a40162e8bed13.scn"
 
 [deps]
 
-source_file="res://Assets/Tiles/TileShader.glb"
-dest_files=["res://.godot/imported/TileShader.glb-e652468cc2b424a44128834b7423fb12.scn"]
+source_file="res://Assets/Tiles/square_gradient_detailed_corner_A.glb"
+dest_files=["res://.godot/imported/square_gradient_detailed_corner_A.glb-94e90baef6f6629be83a40162e8bed13.scn"]
 
 [params]
 
