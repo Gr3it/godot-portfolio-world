@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ceary5bfkg3qb"]
+
+[resource]
+resource_name = "metalDark"
+albedo_color = Color(0.854902, 0.854902, 0.909804, 1)

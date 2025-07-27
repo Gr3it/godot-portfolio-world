@@ -2,14 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpe71bjiugyw4"
+uid="uid://c42btlc8pysh2"
 path.s3tc="res://.godot/imported/Cloud_01_Color_Palette_01.png-81161299365cc8e40a0e5f2434d80fc5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "58bbf77a65fe1d2d96ca308edaf50f83"
 }
 
 [deps]

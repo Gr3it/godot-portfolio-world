@@ -4,6 +4,7 @@
 colors = PackedColorArray(0.784314, 0.521569, 0.372549, 1, 0.854902, 0.682353, 0.494118, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_irokr"]
+resource_name = "Material_9.001_albedo"
 gradient = SubResource("Gradient_1oh2o")
 
 [resource]
