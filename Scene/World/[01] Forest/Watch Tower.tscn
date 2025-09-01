@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddp6smipiecrc"]
+
+[ext_resource type="PackedScene" uid="uid://dc22m47vi7qk1" path="res://Assets/Kenney Platformer Kit/ladder-long.glb" id="1_2i8wg"]
+[ext_resource type="PackedScene" uid="uid://ddium1c33vmxk" path="res://Assets/Kenny Survival Kit/structure.glb" id="2_pt2so"]
+[ext_resource type="PackedScene" uid="uid://dq15pcejabtp2" path="res://Assets/Kenny Survival Kit/floor-hole.glb" id="3_b7syb"]
+[ext_resource type="PackedScene" uid="uid://drqh27mnc7eqo" path="res://Assets/Kenny Survival Kit/structure-roof.glb" id="4_2gqai"]
+
+[node name="Watch Tower" type="Node3D"]
+
+[node name="ladder-long2" parent="." instance=ExtResource("1_2i8wg")]
+transform = Transform3D(-1.02607e-08, -0.165, 0.285788, -7.21238e-09, 0.285788, 0.165, -0.33, -1.11576e-09, -1.24922e-08, 0.1, 0, 0)
+
+[node name="structure2" parent="." instance=ExtResource("2_pt2so")]
+
+[node name="floor-hole3" parent="." instance=ExtResource("3_b7syb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="structure-roof3" parent="." instance=ExtResource("4_2gqai")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0.5, 0)

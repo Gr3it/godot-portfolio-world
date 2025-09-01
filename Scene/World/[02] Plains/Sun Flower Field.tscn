@@ -1,0 +1,328 @@
+[gd_scene load_steps=13 format=3 uid="uid://bhh3xquhgo0wj"]
+
+[ext_resource type="PackedScene" uid="uid://chj0ip2g76383" path="res://Assets/Farm kit/3D Tile/3D_Tile_Farm_Field_01.glb" id="1_26hp5"]
+[ext_resource type="PackedScene" uid="uid://cnflwhyn00w7n" path="res://Assets/Farm kit/Farm Crop Step/Farm_Crop_Sunflower_Step_01.glb" id="2_jpweh"]
+[ext_resource type="PackedScene" uid="uid://b12f72vvw3esm" path="res://Assets/Farm kit/Farm Crop Step/Farm_Crop_Sunflower_Step_02.glb" id="3_yhphc"]
+[ext_resource type="PackedScene" uid="uid://3eutex2ndh6y" path="res://Assets/Farm kit/Farm Crop Step/Farm_Crop_Sunflower_Step_03.glb" id="4_vrt8x"]
+[ext_resource type="PackedScene" uid="uid://uouv3bkt6kyl" path="res://Assets/Farm kit/Farm Fence/Farm_Fence_C_02.glb" id="5_yhphc"]
+[ext_resource type="PackedScene" uid="uid://br5bv4fn7rohp" path="res://Assets/Farm kit/Farm Fence/Farm_Fence_C_01.glb" id="6_vrt8x"]
+[ext_resource type="PackedScene" uid="uid://dr6a6fp7g67y7" path="res://Assets/Farm kit/Farm Fence/Farm_Fence_C_03.glb" id="7_vrt8x"]
+[ext_resource type="PackedScene" uid="uid://wpncm4hpiwc0" path="res://Assets/Farm kit/Farm Tool/Farm_Tool_Watering_Pot_01.glb" id="8_5dsf1"]
+[ext_resource type="PackedScene" uid="uid://dwpgv0yggiv8q" path="res://Assets/Farm kit/Farm Tool/Farm_Tool_Sickle_01.glb" id="9_nf8tu"]
+[ext_resource type="PackedScene" uid="uid://c3loyjvoritxu" path="res://Assets/Farm kit/Farm Tool/Farm_Tool_Shovel_01.glb" id="10_p33ml"]
+[ext_resource type="PackedScene" uid="uid://c04jk5osg0rkn" path="res://Assets/Farm kit/Farm Crop Sign/Farm_Crop_Sign_Sunflower_01.glb" id="11_nf8tu"]
+[ext_resource type="PackedScene" uid="uid://ucplxactsr0c" path="res://Assets/Kenney Graveyard Kit/road.glb" id="12_p33ml"]
+
+[node name="Sun Flower Field" type="Node3D"]
+
+[node name="Field" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+
+[node name="3D_Tile_Farm_Field_012" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -2, -1)
+
+[node name="3D_Tile_Farm_Field_013" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -2, -1)
+
+[node name="3D_Tile_Farm_Field_014" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -2, -3)
+
+[node name="3D_Tile_Farm_Field_015" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -2, -3)
+
+[node name="3D_Tile_Farm_Field_016" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -2, -1)
+
+[node name="3D_Tile_Farm_Field_017" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -2, -1)
+
+[node name="3D_Tile_Farm_Field_018" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -2, -3)
+
+[node name="3D_Tile_Farm_Field_019" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -2, -3)
+
+[node name="3D_Tile_Farm_Field_020" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -2, 3)
+
+[node name="3D_Tile_Farm_Field_021" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -2, 3)
+
+[node name="3D_Tile_Farm_Field_022" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -2, 1)
+
+[node name="3D_Tile_Farm_Field_023" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -2, 1)
+
+[node name="3D_Tile_Farm_Field_028" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -2, -1)
+
+[node name="3D_Tile_Farm_Field_029" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -2, -3)
+
+[node name="3D_Tile_Farm_Field_030" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -2, 3)
+
+[node name="3D_Tile_Farm_Field_031" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -2, 1)
+
+[node name="3D_Tile_Farm_Field_032" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -2, -1)
+
+[node name="3D_Tile_Farm_Field_033" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -2, -3)
+
+[node name="3D_Tile_Farm_Field_036" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -2, -5)
+
+[node name="3D_Tile_Farm_Field_037" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -2, -5)
+
+[node name="3D_Tile_Farm_Field_038" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -2, -5)
+
+[node name="3D_Tile_Farm_Field_039" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -2, -5)
+
+[node name="3D_Tile_Farm_Field_040" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -2, -5)
+
+[node name="3D_Tile_Farm_Field_041" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -2, -5)
+
+[node name="3D_Tile_Farm_Field_042" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -2, 5)
+
+[node name="3D_Tile_Farm_Field_043" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -2, 5)
+
+[node name="3D_Tile_Farm_Field_044" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -2, 5)
+
+[node name="3D_Tile_Farm_Field_045" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -2, 5)
+
+[node name="3D_Tile_Farm_Field_046" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -2, 5)
+
+[node name="3D_Tile_Farm_Field_047" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -2, 5)
+
+[node name="3D_Tile_Farm_Field_034" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -2, 3)
+
+[node name="3D_Tile_Farm_Field_035" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -2, 1)
+
+[node name="3D_Tile_Farm_Field_024" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -2, 3)
+
+[node name="3D_Tile_Farm_Field_025" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -2, 3)
+
+[node name="3D_Tile_Farm_Field_026" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -2, 1)
+
+[node name="3D_Tile_Farm_Field_027" parent="Field" instance=ExtResource("1_26hp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -2, 1)
+
+[node name="Crop" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+
+[node name="Farm_Crop_Sunflower_Step_012" parent="Crop" instance=ExtResource("2_jpweh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -3)
+
+[node name="Farm_Crop_Sunflower_Step_013" parent="Crop" instance=ExtResource("2_jpweh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+
+[node name="Farm_Crop_Sunflower_Step_022" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+
+[node name="Farm_Crop_Sunflower_Step_023" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5)
+
+[node name="Farm_Crop_Sunflower_Step_043" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5)
+
+[node name="Farm_Crop_Sunflower_Step_024" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1)
+
+[node name="Farm_Crop_Sunflower_Step_034" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -1)
+
+[node name="Farm_Crop_Sunflower_Step_025" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -3)
+
+[node name="Farm_Crop_Sunflower_Step_036" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1)
+
+[node name="Farm_Crop_Sunflower_Step_038" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 1)
+
+[node name="Farm_Crop_Sunflower_Step_026" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
+
+[node name="Farm_Crop_Sunflower_Step_050" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -5)
+
+[node name="Farm_Crop_Sunflower_Step_027" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3)
+
+[node name="Farm_Crop_Sunflower_Step_014" parent="Crop" instance=ExtResource("2_jpweh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 3)
+
+[node name="Farm_Crop_Sunflower_Step_028" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1)
+
+[node name="Farm_Crop_Sunflower_Step_053" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
+
+[node name="Farm_Crop_Sunflower_Step_029" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5)
+
+[node name="Farm_Crop_Sunflower_Step_030" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -3)
+
+[node name="Farm_Crop_Sunflower_Step_031" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -5)
+
+[node name="Farm_Crop_Sunflower_Step_032" parent="Crop" instance=ExtResource("3_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+
+[node name="Farm_Crop_Sunflower_Step_033" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5)
+
+[node name="Farm_Crop_Sunflower_Step_035" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -5)
+
+[node name="Farm_Crop_Sunflower_Step_037" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -5)
+
+[node name="Farm_Crop_Sunflower_Step_039" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 1)
+
+[node name="Farm_Crop_Sunflower_Step_040" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1)
+
+[node name="Farm_Crop_Sunflower_Step_041" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 3)
+
+[node name="Farm_Crop_Sunflower_Step_042" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 3)
+
+[node name="Farm_Crop_Sunflower_Step_044" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 5)
+
+[node name="Farm_Crop_Sunflower_Step_045" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 5)
+
+[node name="Farm_Crop_Sunflower_Step_046" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5)
+
+[node name="Farm_Crop_Sunflower_Step_047" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Farm_Crop_Sunflower_Step_048" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="Farm_Crop_Sunflower_Step_049" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -3)
+
+[node name="Farm_Crop_Sunflower_Step_051" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="Farm_Crop_Sunflower_Step_052" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1)
+
+[node name="Farm_Crop_Sunflower_Step_054" parent="Crop" instance=ExtResource("4_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -3)
+
+[node name="Fence" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="Farm_Fence_C_022" parent="Fence" instance=ExtResource("5_yhphc")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, -6)
+
+[node name="Farm_Fence_C_023" parent="Fence" instance=ExtResource("5_yhphc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
+
+[node name="Farm_Fence_C_013" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -6)
+
+[node name="Farm_Fence_C_014" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6)
+
+[node name="Farm_Fence_C_015" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Farm_Fence_C_016" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+
+[node name="Farm_Fence_C_017" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
+
+[node name="Farm_Fence_C_024" parent="Fence" instance=ExtResource("5_yhphc")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 6)
+
+[node name="Farm_Fence_C_018" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, -4)
+
+[node name="Farm_Fence_C_019" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, -2)
+
+[node name="Farm_Fence_C_032" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, -2)
+
+[node name="Farm_Fence_C_033" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, -4)
+
+[node name="Farm_Fence_C_034" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, 4)
+
+[node name="Farm_Fence_C_035" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, 2)
+
+[node name="Farm_Fence_C_020" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 0)
+
+[node name="Farm_Fence_C_021" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 2)
+
+[node name="Farm_Fence_C_025" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 4)
+
+[node name="Farm_Fence_C_026" parent="Fence" instance=ExtResource("5_yhphc")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -6, 0, 6)
+
+[node name="Farm_Fence_C_027" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4, 0, 6)
+
+[node name="Farm_Fence_C_028" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2, 0, 6)
+
+[node name="Farm_Fence_C_029" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 6)
+
+[node name="Farm_Fence_C_030" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -2, 0, 6)
+
+[node name="Farm_Fence_C_031" parent="Fence" instance=ExtResource("6_vrt8x")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -4, 0, 6)
+
+[node name="Farm_Fence_C_036" parent="Fence" instance=ExtResource("7_vrt8x")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, 0)
+
+[node name="Farm_Tool_Watering_Pot_012" parent="." instance=ExtResource("8_5dsf1")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -2.05, 0.25, 8)
+
+[node name="Farm_Tool_Sickle_012" parent="." instance=ExtResource("9_nf8tu")]
+transform = Transform3D(0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0, 1, -6.9, 0.4, 2.5)
+
+[node name="Farm_Tool_Shovel_012" parent="." instance=ExtResource("10_p33ml")]
+transform = Transform3D(-3.78552e-08, 0.5, -0.866025, 2.18557e-08, 0.866025, 0.5, 1, 0, -4.37114e-08, -6.7, 1, 4.5)
+
+[node name="Farm_Crop_Sign_Sunflower_012" parent="." instance=ExtResource("11_nf8tu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 7.5)
+
+[node name="road2" parent="." instance=ExtResource("12_p33ml")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 7.5)

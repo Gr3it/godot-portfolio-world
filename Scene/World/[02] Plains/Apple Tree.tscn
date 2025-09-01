@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://3smd241cw5b6"]
+
+[ext_resource type="PackedScene" uid="uid://b6wv5j2i22np1" path="res://Assets/Farm kit/Farm Tree/Farm_Crop_Tree_02.glb" id="1_aq6fi"]
+[ext_resource type="PackedScene" uid="uid://daj0mmk60jp56" path="res://Assets/Farm kit/Farm Tree Product/Farm_Tree_Product_Apple_01.glb" id="2_grpk6"]
+
+[node name="Apple Tree" type="Node3D"]
+
+[node name="Farm_Crop_Tree_022" parent="." instance=ExtResource("1_aq6fi")]
+
+[node name="Farm_Tree_Product_Apple_012" parent="." instance=ExtResource("2_grpk6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 1.1, 0.6)
+
+[node name="Farm_Tree_Product_Apple_013" parent="." instance=ExtResource("2_grpk6")]
+transform = Transform3D(-0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, -0.866025, 0, 0.8, 0.6)
+
+[node name="Farm_Tree_Product_Apple_014" parent="." instance=ExtResource("2_grpk6")]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, -0.4, 0.8, -0.3)
+
+[node name="Farm_Tree_Product_Apple_015" parent="." instance=ExtResource("2_grpk6")]
+transform = Transform3D(-0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, -0.866025, 0.9, 1.1, -0.3)
+
+[node name="Farm_Tree_Product_Apple_016" parent="." instance=ExtResource("2_grpk6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 2, 0.8)
+
+[node name="Farm_Tree_Product_Apple_020" parent="." instance=ExtResource("2_grpk6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9, 1.8, 0.4)
+
+[node name="Farm_Tree_Product_Apple_021" parent="." instance=ExtResource("2_grpk6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 1.8, -0.9)
+
+[node name="Farm_Tree_Product_Apple_017" parent="." instance=ExtResource("2_grpk6")]
+transform = Transform3D(0.965926, 0.25, 0.0669873, -0.258819, 0.933013, 0.25, 0, -0.258819, 0.965926, -0.8, 0.1, 0.2)
+
+[node name="Farm_Tree_Product_Apple_018" parent="." instance=ExtResource("2_grpk6")]
+transform = Transform3D(0.965926, 0.258819, 0, -0.12941, 0.482963, -0.866026, -0.224144, 0.836516, 0.5, -0.6, 0.1, -1.1)
+
+[node name="Farm_Tree_Product_Apple_019" parent="." instance=ExtResource("2_grpk6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.2, 0.1)

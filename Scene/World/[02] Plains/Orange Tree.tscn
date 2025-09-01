@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1bh5bswv7080"]
+
+[ext_resource type="PackedScene" uid="uid://b6wv5j2i22np1" path="res://Assets/Farm kit/Farm Tree/Farm_Crop_Tree_02.glb" id="1_pd2gv"]
+[ext_resource type="PackedScene" uid="uid://cytltjj1iyf" path="res://Assets/Farm kit/Farm Tree Product/Farm_Tree_Product_Orange_01.glb" id="2_wyr18"]
+
+[node name="OrangeTree" type="Node3D"]
+
+[node name="Farm_Crop_Tree_022" parent="." instance=ExtResource("1_pd2gv")]
+
+[node name="Farm_Tree_Product_Orange_012" parent="." instance=ExtResource("2_wyr18")]
+transform = Transform3D(-0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, -0.965926, 0, 1.2, 1)
+
+[node name="Farm_Tree_Product_Orange_013" parent="." instance=ExtResource("2_wyr18")]
+transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, -1, 1.7, 0.1)
+
+[node name="Farm_Tree_Product_Orange_014" parent="." instance=ExtResource("2_wyr18")]
+transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 0.8, 1.8, -0.6)
+
+[node name="Farm_Tree_Product_Orange_015" parent="." instance=ExtResource("2_wyr18")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.7, 0.1, 0.4)
+
+[node name="Farm_Tree_Product_Orange_016" parent="." instance=ExtResource("2_wyr18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.8, -0.5)
+
+[node name="Farm_Tree_Product_Orange_017" parent="." instance=ExtResource("2_wyr18")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0.3, 0.8, 0.5)
+
+[node name="Farm_Tree_Product_Orange_018" parent="." instance=ExtResource("2_wyr18")]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, 1, 1.5, 0.2)
+
+[node name="Farm_Tree_Product_Orange_019" parent="." instance=ExtResource("2_wyr18")]
+transform = Transform3D(0.707107, 0.707107, 0, -0.683013, 0.683013, -0.258819, -0.183013, 0.183013, 0.965926, -0.1, 0.1, -0.7)
+
+[node name="Farm_Tree_Product_Orange_020" parent="." instance=ExtResource("2_wyr18")]
+transform = Transform3D(0.258819, 0, -0.965926, 0.482963, 0.866025, 0.12941, 0.836516, -0.5, 0.224144, -0.7, 0.1, 0.8)

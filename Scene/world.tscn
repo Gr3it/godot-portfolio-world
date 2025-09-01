@@ -1,4 +1,4 @@
-[gd_scene load_steps=131 format=4 uid="uid://bpfgkdjhepj8e"]
+[gd_scene load_steps=131 format=4 uid="uid://dxi62amo1nnih"]
 
 [ext_resource type="Material" uid="uid://cpq72mcnmgwlj" path="res://Materials/Forest.tres" id="1_4a288"]
 [ext_resource type="Material" uid="uid://d15327h1vpq77" path="res://Materials/Ground.tres" id="2_h6y7a"]
@@ -42,10 +42,10 @@
 [ext_resource type="PackedScene" uid="uid://c2dp4iltci0dh" path="res://Assets/Farm kit/Cloud/Cloud_02.glb" id="39_flo70"]
 [ext_resource type="PackedScene" uid="uid://i3lgv5165sxa" path="res://Assets/Farm kit/Cloud/Cloud_03.glb" id="40_3q40k"]
 [ext_resource type="Material" uid="uid://boajwg1gl11ap" path="res://Materials/Rocket/DarkGrey.tres" id="40_j0sia"]
-[ext_resource type="PackedScene" uid="uid://brnijofp17knk" path="res://Scene/island.tscn" id="41_3q40k"]
+[ext_resource type="PackedScene" uid="uid://brnijofp17knk" path="res://Scene/World/[06] Skylands/island.tscn" id="41_3q40k"]
 [ext_resource type="PackedScene" uid="uid://bav85lqgpatgj" path="res://Assets/Farm kit/Cloud/Cloud_01.glb" id="41_hqv1g"]
 [ext_resource type="PackedScene" uid="uid://cl2cltfdulhgf" path="res://Assets/Vehicles/sedan-sports.glb" id="46_0jksm"]
-[ext_resource type="PackedScene" uid="uid://nixgq6rp4qf0" path="res://Scene/dock.tscn" id="46_hqv1g"]
+[ext_resource type="PackedScene" uid="uid://nixgq6rp4qf0" path="res://Scene/World/[05] Ocean/dock.tscn" id="46_hqv1g"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hqv1g"]
 _surfaces = [{

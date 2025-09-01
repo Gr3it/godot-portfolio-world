@@ -10,4 +10,5 @@ gradient = SubResource("Gradient_w1i3w")
 [resource]
 resource_name = "Material_8.001"
 albedo_texture = SubResource("GradientTexture1D_pgxri")
+texture_filter = 0
 texture_repeat = false

@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dulge1wdb1ccy"]
+
+[ext_resource type="PackedScene" uid="uid://bgfi1aj4xt5kq" path="res://Assets/Kenny Survival Kit/tree-log.glb" id="1_o6fj5"]
+[ext_resource type="PackedScene" uid="uid://dlvyasjh7l6jl" path="res://Assets/Kenney Platformer Kit/mushrooms.glb" id="2_388h8"]
+
+[node name="Fallen Log" type="Node3D"]
+transform = Transform3D(2.82843, 0, -2.82843, 0, 4, 0, 2.82843, 0, 2.82843, 0, 0, 0)
+
+[node name="tree-log2" parent="." instance=ExtResource("1_o6fj5")]
+
+[node name="tree-log3" parent="." instance=ExtResource("1_o6fj5")]
+
+[node name="mushrooms2" parent="." instance=ExtResource("2_388h8")]
+transform = Transform3D(0.216506, 0, 0.125, 0, 0.25, 0, -0.125, 0, 0.216506, 0.176776, -0.0625, 0.441941)
+
+[node name="mushrooms4" parent="." instance=ExtResource("2_388h8")]
+transform = Transform3D(0.220971, 0, 0.220971, 0, 0.3125, 0, -0.220971, 0, 0.220971, -0.194455, -0.0625, 0.494975)
+
+[node name="mushrooms7" parent="." instance=ExtResource("2_388h8")]
+transform = Transform3D(-0.0808809, 0, -0.301852, 0, 0.3125, 0, 0.301852, 0, -0.0808809, -0.212132, -0.0625, -0.22981)
+
+[node name="mushrooms3" parent="." instance=ExtResource("2_388h8")]
+transform = Transform3D(0.32476, 0, 0.1875, 0, 0.375, 0, -0.1875, 0, 0.32476, 0.106066, -0.0625, 0.0707111)
+
+[node name="mushrooms6" parent="." instance=ExtResource("2_388h8")]
+transform = Transform3D(0.301852, 0, 0.0808809, 0, 0.3125, 0, -0.0808809, 0, 0.301852, 0.247487, -0.0625, -0.388909)
+
+[node name="mushrooms5" parent="." instance=ExtResource("2_388h8")]
+transform = Transform3D(0.32476, 0, 0.1875, 0, 0.375, 0, -0.1875, 0, 0.32476, -0.247488, -0.0625, -0.601042)
+
+[node name="mushrooms8" parent="." instance=ExtResource("2_388h8")]
+transform = Transform3D(0.32476, 0, 0.1875, 0, 0.375, 0, -0.1875, 0, 0.32476, -0.265165, -0.0625, 0.123743)

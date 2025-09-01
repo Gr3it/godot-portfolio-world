@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://7m34qx776uod"]
+
+[ext_resource type="PackedScene" uid="uid://38dpcn3moapr" path="res://Scene/World/[07] City/Terrain Mesh.tscn" id="1_kut83"]
+
+[node name="City" type="Node3D"]
+
+[node name="TerrainMesh" parent="." instance=ExtResource("1_kut83")]

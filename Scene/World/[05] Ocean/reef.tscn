@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d37ebxki7o7bd"]
+
+[ext_resource type="PackedScene" uid="uid://2hbo2a1holmf" path="res://Assets/Kenny Pirates Kit/rocks-c.glb" id="1_25d7a"]
+[ext_resource type="PackedScene" uid="uid://c6jymesurebbh" path="res://Scene/flag.tscn" id="2_p5eiy"]
+
+[node name="reef" instance=ExtResource("1_25d7a")]
+
+[node name="flag" parent="." index="1" instance=ExtResource("2_p5eiy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 2.25, 0)

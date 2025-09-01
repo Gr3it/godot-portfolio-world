@@ -1,0 +1,174 @@
+[gd_scene load_steps=17 format=3 uid="uid://jmd7kdurdinp"]
+
+[ext_resource type="PackedScene" uid="uid://dn8d1t0jjn3ii" path="res://Scene/World/[05] Ocean/Terrain Mesh.tscn" id="1_uh2cg"]
+[ext_resource type="PackedScene" uid="uid://c2gqk5vm8kai4" path="res://Scene/Vehicles Paths.tscn" id="2_30riq"]
+[ext_resource type="PackedScene" uid="uid://nixgq6rp4qf0" path="res://Scene/World/[05] Ocean/dock.tscn" id="2_os72a"]
+[ext_resource type="PackedScene" uid="uid://d37ebxki7o7bd" path="res://Scene/World/[05] Ocean/reef.tscn" id="3_30riq"]
+[ext_resource type="PackedScene" uid="uid://bb2v8q17g8wj8" path="res://Assets/Kenny Pirates Kit/palm-detailed-straight.glb" id="5_e7w5u"]
+[ext_resource type="PackedScene" uid="uid://dtfxem2m6qt32" path="res://Assets/Kenny Pirates Kit/boat-row-small.glb" id="6_g6lco"]
+[ext_resource type="PackedScene" uid="uid://xhe2g2nv2m10" path="res://Assets/Kenny Pirates Kit/palm-detailed-bend.glb" id="7_6aywr"]
+[ext_resource type="PackedScene" uid="uid://deq6uf8hsr7tt" path="res://Assets/Kenny Pirates Kit/palm-straight.glb" id="8_dwatw"]
+[ext_resource type="PackedScene" uid="uid://clsh6eoc8h1oc" path="res://Assets/Kenny Pirates Kit/rocks-b.glb" id="9_dwatw"]
+[ext_resource type="PackedScene" uid="uid://2hbo2a1holmf" path="res://Assets/Kenny Pirates Kit/rocks-c.glb" id="10_kpsox"]
+[ext_resource type="PackedScene" uid="uid://dihvr4eepu1n0" path="res://Assets/Kenny Pirates Kit/rocks-a.glb" id="11_0iik6"]
+[ext_resource type="PackedScene" uid="uid://vcn5d1mj6ifg" path="res://Assets/Kenny Watercraft Kit/cargo-pile-b.glb" id="12_23jr8"]
+[ext_resource type="PackedScene" uid="uid://qkqxlpvhmsmd" path="res://Assets/Kenny Watercraft Kit/cargo-pile-a.glb" id="13_rgrxn"]
+[ext_resource type="PackedScene" uid="uid://cbial8fx6koah" path="res://Assets/Kenny Watercraft Kit/buoy.glb" id="14_nm0xh"]
+[ext_resource type="PackedScene" uid="uid://ijuhbr4o4bpj" path="res://Assets/Kenny Watercraft Kit/boat-speed-b.glb" id="15_hcrod"]
+[ext_resource type="PackedScene" uid="uid://bdruw0jou4n8p" path="res://Assets/Kenny Watercraft Kit/boat-speed-c.glb" id="16_23jr8"]
+
+[node name="Ocean" type="Node3D"]
+
+[node name="VehiclesPaths" parent="." instance=ExtResource("2_30riq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -334)
+
+[node name="TerrainMesh" parent="." instance=ExtResource("1_uh2cg")]
+
+[node name="Molo" parent="." instance=ExtResource("2_os72a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 12)
+
+[node name="rocks-c2" parent="." instance=ExtResource("3_30riq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5, 0, 21)
+
+[node name="Nature" type="Node3D" parent="."]
+
+[node name="palm-detailed-straight2" parent="." instance=ExtResource("5_e7w5u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 5)
+
+[node name="boat-row-small2" parent="." instance=ExtResource("6_g6lco")]
+transform = Transform3D(0.857329, 0, 0.514769, 0, 1, 0, -0.514769, 0, 0.857329, 6.91597, 0, 5.54126)
+
+[node name="palm-detailed-bend2" parent="." instance=ExtResource("7_6aywr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.5, 0, 58.5)
+
+[node name="palm-detailed-bend3" parent="." instance=ExtResource("7_6aywr")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 20.5, 0, 41)
+
+[node name="palm-detailed-bend4" parent="." instance=ExtResource("7_6aywr")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 25.5, 0, 73.5)
+
+[node name="palm-detailed-bend5" parent="." instance=ExtResource("7_6aywr")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 5, 0, 86.5)
+
+[node name="palm-detailed-bend6" parent="." instance=ExtResource("7_6aywr")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 12.5, 0, 128.5)
+
+[node name="palm-detailed-bend8" parent="." instance=ExtResource("7_6aywr")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -4.5, 0, 148.5)
+
+[node name="palm-detailed-bend7" parent="." instance=ExtResource("7_6aywr")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, -20, 0, 101.5)
+
+[node name="palm-straight2" parent="." instance=ExtResource("8_dwatw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 0, 45.5)
+
+[node name="palm-straight4" parent="." instance=ExtResource("8_dwatw")]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, 28, 0, 93.5)
+
+[node name="palm-straight5" parent="." instance=ExtResource("8_dwatw")]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -28, 0, 116)
+
+[node name="palm-straight3" parent="." instance=ExtResource("8_dwatw")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 5, 0, 30)
+
+[node name="palm-detailed-straight3" parent="." instance=ExtResource("5_e7w5u")]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, -12.5, 0, 73)
+
+[node name="palm-detailed-straight4" parent="." instance=ExtResource("5_e7w5u")]
+transform = Transform3D(0.5, 0, -0.866026, 0, 1, 0, 0.866026, 0, 0.5, 28.5, 0, 24.5)
+
+[node name="boat-row-small3" parent="." instance=ExtResource("6_g6lco")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -15.5, 0, 128)
+
+[node name="rocks-b2" parent="." instance=ExtResource("9_dwatw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 0, 60)
+
+[node name="rocks-c3" parent="." instance=ExtResource("10_kpsox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 11)
+
+[node name="rocks-c4" parent="." instance=ExtResource("10_kpsox")]
+transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 15, 0, 112.5)
+
+[node name="rocks-c7" parent="." instance=ExtResource("10_kpsox")]
+transform = Transform3D(5.96046e-08, 0, 1, 0, 1, 0, -1, 0, 5.96046e-08, 37, 0, 120)
+
+[node name="rocks-c6" parent="." instance=ExtResource("10_kpsox")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -31.5, 0, 90)
+
+[node name="rocks-c5" parent="." instance=ExtResource("10_kpsox")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, -20.5, 0, 141.5)
+
+[node name="rocks-b3" parent="." instance=ExtResource("9_dwatw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -38, 0, 41)
+
+[node name="rocks-a2" parent="." instance=ExtResource("11_0iik6")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 37, 0, 58)
+
+[node name="rocks-a3" parent="." instance=ExtResource("11_0iik6")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 42.5, 0, 29.5)
+
+[node name="cargo-pile-b2" parent="." instance=ExtResource("12_23jr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 0, 89.5)
+
+[node name="cargo-pile-b3" parent="." instance=ExtResource("12_23jr8")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 19, 0, 57.5)
+
+[node name="cargo-pile-b4" parent="." instance=ExtResource("12_23jr8")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -25, 0, 36.5)
+
+[node name="cargo-pile-b5" parent="." instance=ExtResource("12_23jr8")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -34.5, 0, 16.5)
+
+[node name="cargo-pile-b6" parent="." instance=ExtResource("12_23jr8")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -38.5, 0, 69.5)
+
+[node name="cargo-pile-b7" parent="." instance=ExtResource("12_23jr8")]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -38.5, 0, 142)
+
+[node name="cargo-pile-b8" parent="." instance=ExtResource("12_23jr8")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 40, 0, 87)
+
+[node name="cargo-pile-a2" parent="." instance=ExtResource("13_rgrxn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.32433, 0, 24.3265)
+
+[node name="cargo-pile-a3" parent="." instance=ExtResource("13_rgrxn")]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, 38.6757, 0, 15.8265)
+
+[node name="cargo-pile-a4" parent="." instance=ExtResource("13_rgrxn")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 35.6757, 0, 44.3265)
+
+[node name="cargo-pile-a5" parent="." instance=ExtResource("13_rgrxn")]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 28.6757, 0, 113.327)
+
+[node name="cargo-pile-a6" parent="." instance=ExtResource("13_rgrxn")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 38.1757, 0, 139.327)
+
+[node name="cargo-pile-a7" parent="." instance=ExtResource("13_rgrxn")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -41.3243, 0, 116.827)
+
+[node name="buoy2" parent="." instance=ExtResource("14_nm0xh")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -29, 0, 27)
+
+[node name="buoy3" parent="." instance=ExtResource("14_nm0xh")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -13.5, 0, 34.5)
+
+[node name="buoy4" parent="." instance=ExtResource("14_nm0xh")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 12, 0, 68.5)
+
+[node name="buoy5" parent="." instance=ExtResource("14_nm0xh")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -23, 0, 82)
+
+[node name="buoy7" parent="." instance=ExtResource("14_nm0xh")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 11, 0, 102)
+
+[node name="buoy8" parent="." instance=ExtResource("14_nm0xh")]
+transform = Transform3D(-5.96046e-08, 0, -1, 0, 1, 0, 1, 0, -5.96046e-08, -13, 0, 136.5)
+
+[node name="buoy6" parent="." instance=ExtResource("14_nm0xh")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -4.5, 0, 99)
+
+[node name="boat-speed-b2" parent="." instance=ExtResource("15_hcrod")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 20, 0, 102)
+
+[node name="boat-speed-c2" parent="." instance=ExtResource("16_23jr8")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, -28, 0, 140.5)

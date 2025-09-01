@@ -1,0 +1,502 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6sb4o7ys8bgn"]
+
+[ext_resource type="PackedScene" uid="uid://b72wnxaaavwu6" path="res://Assets/Kenney Platformer Kit/flowers.glb" id="1_no751"]
+
+[node name="Flower Camp" type="Node3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="flowers" parent="." instance=ExtResource("1_no751")]
+
+[node name="flowers2" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0, 0.199997)
+
+[node name="flowers3" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -0.600006)
+
+[node name="flowers4" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, -0.700005)
+
+[node name="flowers5" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0, -0.400002)
+
+[node name="flowers6" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9, 0, -0.200005)
+
+[node name="flowers7" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7, 0, -1.00001)
+
+[node name="flowers8" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.10001)
+
+[node name="flowers9" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 0, 1.1)
+
+[node name="flowers10" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3, 0, 1.3)
+
+[node name="flowers11" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1, 0, 0.499992)
+
+[node name="flowers12" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0, 0.399994)
+
+[node name="flowers13" parent="." instance=ExtResource("1_no751")]
+
+[node name="flowers14" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0, 0.199997)
+
+[node name="flowers15" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -0.600006)
+
+[node name="flowers16" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, -0.700005)
+
+[node name="flowers17" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0, -0.400002)
+
+[node name="flowers18" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9, 0, -0.200005)
+
+[node name="flowers19" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7, 0, -1.00001)
+
+[node name="flowers20" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.10001)
+
+[node name="flowers21" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 0, 1.1)
+
+[node name="flowers22" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3, 0, 1.3)
+
+[node name="flowers23" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1, 0, 0.499992)
+
+[node name="flowers24" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0, 0.399994)
+
+[node name="flowers25" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0, 1.5)
+
+[node name="flowers26" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 1.7)
+
+[node name="flowers27" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0, 0.899994)
+
+[node name="flowers28" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, 0.799995)
+
+[node name="flowers29" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0, 1.5)
+
+[node name="flowers30" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 1.7)
+
+[node name="flowers31" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0, 0.899994)
+
+[node name="flowers32" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, 0.799995)
+
+[node name="flowers33" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 0, 0)
+
+[node name="flowers34" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3, 0, 0.199997)
+
+[node name="flowers35" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1, 0, -0.600006)
+
+[node name="flowers36" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4, 0, -0.700005)
+
+[node name="flowers37" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8, 0, -0.400002)
+
+[node name="flowers38" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, -0.200005)
+
+[node name="flowers39" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, -1.00001)
+
+[node name="flowers40" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 0, -1.10001)
+
+[node name="flowers41" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2, 0, 1.1)
+
+[node name="flowers42" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9, 0, 1.3)
+
+[node name="flowers43" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7, 0, 0.499992)
+
+[node name="flowers44" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0.399994)
+
+[node name="flowers45" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 0, 0)
+
+[node name="flowers46" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3, 0, 0.199997)
+
+[node name="flowers47" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1, 0, -0.600006)
+
+[node name="flowers48" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4, 0, -0.700005)
+
+[node name="flowers49" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8, 0, -0.400002)
+
+[node name="flowers50" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, -0.200005)
+
+[node name="flowers51" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, -1.00001)
+
+[node name="flowers52" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 0, -1.10001)
+
+[node name="flowers53" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2, 0, 1.1)
+
+[node name="flowers54" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9, 0, 1.3)
+
+[node name="flowers55" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7, 0, 0.499992)
+
+[node name="flowers56" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0.399994)
+
+[node name="flowers57" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1.5)
+
+[node name="flowers58" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7, 0, 1.7)
+
+[node name="flowers59" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 0.899994)
+
+[node name="flowers60" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 0, 0.799995)
+
+[node name="flowers61" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1.5)
+
+[node name="flowers62" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7, 0, 1.7)
+
+[node name="flowers63" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 0.899994)
+
+[node name="flowers64" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 0, 0.799995)
+
+[node name="flowers65" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0, 3)
+
+[node name="flowers66" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 3.2)
+
+[node name="flowers67" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 0, 2.39999)
+
+[node name="flowers68" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.599999, 0, 2.3)
+
+[node name="flowers69" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2.6)
+
+[node name="flowers70" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7, 0, 2.8)
+
+[node name="flowers71" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 1.99999)
+
+[node name="flowers72" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0, 1.89999)
+
+[node name="flowers73" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4, 0, 4.1)
+
+[node name="flowers74" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1, 0, 4.3)
+
+[node name="flowers75" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9, 0, 3.49999)
+
+[node name="flowers76" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 0, 3.39999)
+
+[node name="flowers77" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0, 3)
+
+[node name="flowers78" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 3.2)
+
+[node name="flowers79" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3, 0, 2.39999)
+
+[node name="flowers80" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.599999, 0, 2.3)
+
+[node name="flowers81" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2.6)
+
+[node name="flowers82" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7, 0, 2.8)
+
+[node name="flowers83" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 1.99999)
+
+[node name="flowers84" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0, 1.89999)
+
+[node name="flowers85" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4, 0, 4.1)
+
+[node name="flowers86" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1, 0, 4.3)
+
+[node name="flowers87" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9, 0, 3.49999)
+
+[node name="flowers88" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 0, 3.39999)
+
+[node name="flowers89" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0, 4.5)
+
+[node name="flowers90" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9, 0, 4.7)
+
+[node name="flowers91" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7, 0, 3.89999)
+
+[node name="flowers92" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999999, 0, 3.8)
+
+[node name="flowers106" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499999, 0, 4.3)
+
+[node name="flowers118" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 0, 4.85)
+
+[node name="flowers93" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0, 4.5)
+
+[node name="flowers94" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9, 0, 4.7)
+
+[node name="flowers95" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7, 0, 3.89999)
+
+[node name="flowers96" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999999, 0, 3.8)
+
+[node name="flowers129" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0, 3.4)
+
+[node name="flowers130" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, 0, 3.6)
+
+[node name="flowers131" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0, 2.79999)
+
+[node name="flowers132" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.550001, 0, 2.7)
+
+[node name="flowers133" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0, 3.4)
+
+[node name="flowers134" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, 0, 3.6)
+
+[node name="flowers135" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0, 2.79999)
+
+[node name="flowers136" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.550001, 0, 2.7)
+
+[node name="flowers137" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 1.9)
+
+[node name="flowers138" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0500001, 0, 2.1)
+
+[node name="flowers139" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 1.29999)
+
+[node name="flowers140" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.950001, 0, 1.2)
+
+[node name="flowers141" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 1.9)
+
+[node name="flowers142" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0500001, 0, 2.1)
+
+[node name="flowers143" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 1.29999)
+
+[node name="flowers144" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.950001, 0, 1.2)
+
+[node name="flowers145" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15, 0, 0.45)
+
+[node name="flowers146" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45, 0, 0.65)
+
+[node name="flowers147" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, -0.15001)
+
+[node name="flowers148" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9, 0, -1.3)
+
+[node name="flowers162" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 0, -1.5)
+
+[node name="flowers149" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15, 0, 0.45)
+
+[node name="flowers150" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45, 0, 0.65)
+
+[node name="flowers151" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.65, 0, -0.15001)
+
+[node name="flowers153" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.65, 0, 1.5)
+
+[node name="flowers154" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.35, 0, 1.7)
+
+[node name="flowers155" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.15, 0, 0.89999)
+
+[node name="flowers156" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 0, 0.8)
+
+[node name="flowers157" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.65, 0, 1.5)
+
+[node name="flowers158" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.35, 0, 1.7)
+
+[node name="flowers159" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.25, 0, -9.83477e-06)
+
+[node name="flowers160" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.45, 0, 0.8)
+
+[node name="flowers161" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+
+[node name="flowers163" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 0, 2.39999)
+
+[node name="flowers164" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8, 0, 2.3)
+
+[node name="flowers165" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+
+[node name="flowers167" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 0, 2.39999)
+
+[node name="flowers168" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8, 0, 2.3)
+
+[node name="flowers97" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4, 0, 3)
+
+[node name="flowers98" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1, 0, 3.2)
+
+[node name="flowers99" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9, 0, 2.39999)
+
+[node name="flowers100" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2, 0, 2.3)
+
+[node name="flowers101" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6, 0, 2.6)
+
+[node name="flowers102" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3, 0, 2.8)
+
+[node name="flowers103" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1, 0, 1.99999)
+
+[node name="flowers104" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4, 0, 1.89999)
+
+[node name="flowers105" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 4.1)
+
+[node name="flowers107" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0, 3.49999)
+
+[node name="flowers108" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8, 0, 3.39999)
+
+[node name="flowers109" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4, 0, 3)
+
+[node name="flowers110" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1, 0, 3.2)
+
+[node name="flowers111" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9, 0, 2.39999)
+
+[node name="flowers112" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2, 0, 2.3)
+
+[node name="flowers113" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6, 0, 2.6)
+
+[node name="flowers114" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3, 0, 2.8)
+
+[node name="flowers115" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1, 0, 1.99999)
+
+[node name="flowers116" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4, 0, 1.89999)
+
+[node name="flowers117" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 4.1)
+
+[node name="flowers119" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0, 3.49999)
+
+[node name="flowers120" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8, 0, 3.39999)
+
+[node name="flowers121" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8, 0, 4.5)
+
+[node name="flowers122" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 4.7)
+
+[node name="flowers123" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, 3.89999)
+
+[node name="flowers124" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 0, 3.8)
+
+[node name="flowers125" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8, 0, 4.5)
+
+[node name="flowers126" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 4.7)
+
+[node name="flowers127" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, 3.89999)
+
+[node name="flowers128" parent="." instance=ExtResource("1_no751")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 0, 3.8)

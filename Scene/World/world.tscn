@@ -1,0 +1,39 @@
+[gd_scene load_steps=10 format=3 uid="uid://dr3t3ghxr1e3f"]
+
+[ext_resource type="PackedScene" uid="uid://dnw2wvxkjxfq3" path="res://Scene/World/[00] Village/Village.tscn" id="1_8r6ai"]
+[ext_resource type="PackedScene" uid="uid://dmipkoh1be3yn" path="res://Scene/World/[01] Forest/Forest.tscn" id="2_5qqpy"]
+[ext_resource type="PackedScene" uid="uid://dji3i1vshxb6y" path="res://Scene/World/[02] Plains/Plains.tscn" id="3_jtoul"]
+[ext_resource type="PackedScene" uid="uid://bvcp7ni2l6piq" path="res://Scene/World/[03] Badlands/Badlands.tscn" id="4_k48dw"]
+[ext_resource type="PackedScene" uid="uid://dcj46f42c3i1l" path="res://Scene/World/[04] Desert/Desert.tscn" id="5_su0op"]
+[ext_resource type="PackedScene" uid="uid://jmd7kdurdinp" path="res://Scene/World/[05] Ocean/Ocean.tscn" id="6_1uwtg"]
+[ext_resource type="PackedScene" uid="uid://bxyr6u1s28i4e" path="res://Scene/World/[06] Skylands/Skylands.tscn" id="7_lgevv"]
+[ext_resource type="PackedScene" uid="uid://7m34qx776uod" path="res://Scene/World/[07] City/City.tscn" id="8_rdfd6"]
+[ext_resource type="PackedScene" uid="uid://bm3wd15q10f7g" path="res://Assets/model.gltf" id="9_jtoul"]
+
+[node name="World" type="Node3D"]
+
+[node name="Village" parent="." instance=ExtResource("1_8r6ai")]
+
+[node name="Forest" parent="." instance=ExtResource("2_5qqpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 32)
+
+[node name="Plains" parent="." instance=ExtResource("3_jtoul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 142)
+
+[node name="Badlands" parent="." instance=ExtResource("4_k48dw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 238)
+
+[node name="Desert" parent="." instance=ExtResource("5_su0op")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 286)
+
+[node name="Ocean" parent="." instance=ExtResource("6_1uwtg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 334)
+
+[node name="Skylands" parent="." instance=ExtResource("7_lgevv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 484)
+
+[node name="City" parent="." instance=ExtResource("8_rdfd6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 521)
+
+[node name="blockbench_export" parent="." instance=ExtResource("9_jtoul")]
+transform = Transform3D(-3, 0, 4.17233e-07, 0, 3, 0, -4.17233e-07, 0, -3, 16, 1, 359)

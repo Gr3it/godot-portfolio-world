@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjt22a71c3h3y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a2yen"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.247059)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3riyf"]
+material = SubResource("StandardMaterial3D_a2yen")
+size = Vector2(18, 18)
+
+[node name="PlaceHolders" type="Node3D"]
+
+[node name="platform1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 9)
+mesh = SubResource("PlaneMesh_3riyf")
+
+[node name="platform2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 33)
+mesh = SubResource("PlaneMesh_3riyf")
+skeleton = NodePath("../platform1")
+
+[node name="platform3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 57)
+mesh = SubResource("PlaneMesh_3riyf")
+
+[node name="platform4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 81)
+mesh = SubResource("PlaneMesh_3riyf")
+skeleton = NodePath("../platform1")
+
+[node name="platform5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 105)
+mesh = SubResource("PlaneMesh_3riyf")
+
+[node name="platform6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 129)
+mesh = SubResource("PlaneMesh_3riyf")
+skeleton = NodePath("../platform1")
+
+[node name="platform7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 153)
+mesh = SubResource("PlaneMesh_3riyf")
+
+[node name="platform8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 177)
+mesh = SubResource("PlaneMesh_3riyf")
+skeleton = NodePath("../platform1")
+
+[node name="platform9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 201)
+mesh = SubResource("PlaneMesh_3riyf")
+
+[node name="platform10" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 225)
+mesh = SubResource("PlaneMesh_3riyf")
+skeleton = NodePath("../platform1")

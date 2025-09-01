@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=3 uid="uid://c37yxm8gific6"]
+
+[ext_resource type="PackedScene" uid="uid://blyy40ch1gbm7" path="res://Assets/Kenny Survival Kit/campfire-pit.glb" id="1_hnluo"]
+[ext_resource type="PackedScene" uid="uid://ggtmy1dker2u" path="res://Assets/Kenny Survival Kit/campfire-stand.glb" id="2_mpnrk"]
+[ext_resource type="PackedScene" uid="uid://dnusyr1eou4mg" path="res://Assets/Kenny Survival Kit/resource-planks.glb" id="3_xebg4"]
+[ext_resource type="PackedScene" uid="uid://b8da04b15r4q8" path="res://Assets/Kenny Survival Kit/workbench-grind.glb" id="4_8jkt4"]
+[ext_resource type="PackedScene" uid="uid://b77vl2s3ue6lm" path="res://Assets/Kenny Survival Kit/tent-canvas.glb" id="5_7om0y"]
+[ext_resource type="PackedScene" uid="uid://cj2yejrucvnjw" path="res://Assets/Kenny Survival Kit/tool-pickaxe-upgraded.glb" id="6_wku0u"]
+[ext_resource type="PackedScene" uid="uid://btga3v1u4j0k8" path="res://Assets/Kenny Survival Kit/bucket.glb" id="7_tqx4v"]
+
+[node name="Camp" type="Node3D"]
+
+[node name="campfire-pit2" parent="." instance=ExtResource("1_hnluo")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1, 0, 1)
+
+[node name="campfire-stand2" parent="." instance=ExtResource("2_mpnrk")]
+transform = Transform3D(2.59808, 0, 1.5, 0, 3, 0, -1.5, 0, 2.59808, 1, 0, 1)
+
+[node name="resource-planks2" parent="." instance=ExtResource("3_xebg4")]
+transform = Transform3D(1.5, 0, 2.59808, 0, 3, 0, -2.59808, 0, 1.5, 1.25, 0, -2)
+
+[node name="workbench-grind2" parent="." instance=ExtResource("4_8jkt4")]
+transform = Transform3D(1.5, 0, -2.59808, 0, 3, 0, 2.59808, 0, 1.5, -0.5, 0, 2.5)
+
+[node name="tent-canvas2" parent="." instance=ExtResource("5_7om0y")]
+transform = Transform3D(2.82843, 0, 2.82843, 0, 4, 0, -2.82843, 0, 2.82843, -1.25, 0, -0.75)
+
+[node name="tool-pickaxe-upgraded2" parent="." instance=ExtResource("6_wku0u")]
+transform = Transform3D(2.32356, -0.672432, 1.77452, -0.475481, 2.50955, 1.57356, -1.83712, -1.5, 1.83712, -1, 0, 0.950001)
+
+[node name="bucket2" parent="." instance=ExtResource("7_tqx4v")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.5, 0, -0.5)
