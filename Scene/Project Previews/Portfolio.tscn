@@ -1,7 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://ckfmey638vp1p"]
+[gd_scene load_steps=10 format=4 uid="uid://ckfmey638vp1p"]
 
 [ext_resource type="Texture2D" uid="uid://dlf2npuegn8np" path="res://Assets/KayKit Furniture/furniturebits_texture.png" id="1_h27q2"]
-[ext_resource type="PackedScene" uid="uid://bs4uxd1frjjct" path="res://Scene/Project Previews/Portfolio/Terrain Gripdmap.tscn" id="2_1a1y7"]
+[ext_resource type="PackedScene" uid="uid://k8anjwpsa0h0" path="res://Scene/Project Previews/Portfolio/Mini World.tscn" id="2_1a1y7"]
+[ext_resource type="PackedScene" uid="uid://sj27c6syptbk" path="res://Assets/KayKit Furniture/cactus_small_B.gltf" id="3_1m14t"]
+[ext_resource type="PackedScene" uid="uid://b6rprol6mmfsj" path="res://Assets/KayKit Furniture/book_single.gltf" id="4_1wmit"]
+[ext_resource type="PackedScene" uid="uid://d0mnycevdrmgf" path="res://Assets/KayKit Prototype/Can_B.gltf" id="5_1wmit"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_s36ff"]
 size = Vector2(18, 9)
@@ -51,11 +54,20 @@ visible = false
 mesh = SubResource("PlaneMesh_s36ff")
 
 [node name="table_low2" type="Node3D" parent="."]
-transform = Transform3D(7, 0, 0, 0, 3, 0, 0, 0, 5, 0, 0, 0.375)
+transform = Transform3D(7, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0.375)
 
 [node name="table_low" type="MeshInstance3D" parent="table_low2"]
 mesh = SubResource("ArrayMesh_mcjlv")
 skeleton = NodePath("")
 
-[node name="TerrainGripdmap" parent="." instance=ExtResource("2_1a1y7")]
-transform = Transform3D(-1.44248e-08, 0, 0.33, 0, 0.33, 0, -0.33, 0, -1.44248e-08, 0, 1.5, 0.375)
+[node name="MiniWorld" parent="." instance=ExtResource("2_1a1y7")]
+transform = Transform3D(-1.44248e-08, 0, 0.33, 0, 0.33, 0, -0.33, 0, -1.44248e-08, 0, 2.5, -0.25)
+
+[node name="cactus_small_B2" parent="." instance=ExtResource("3_1m14t")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -7, 2.5, 3)
+
+[node name="book_single2" parent="." instance=ExtResource("4_1wmit")]
+transform = Transform3D(-7.57103e-08, 1.73205, 1, -2, -8.74228e-08, 0, 4.37114e-08, -1, 1.73205, 6.375, 2.7, 2.75)
+
+[node name="Can_B2" parent="." instance=ExtResource("5_1wmit")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.375, 2.5, 3.375)
