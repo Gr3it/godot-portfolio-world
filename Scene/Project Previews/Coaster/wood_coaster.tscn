@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkaft2ny0sac1"]
+
+[ext_resource type="PackedScene" uid="uid://cdtcx4vnhljfe" path="res://Assets/Kenney Coaster Kit/coaster-wood-track.glb" id="1_wvm8a"]
+[ext_resource type="PackedScene" uid="uid://c3d5nslpiqfx3" path="res://Assets/Kenney Coaster Kit/coaster-wood-segment.glb" id="2_e3ncg"]
+
+[node name="2L wood coaster" type="Node3D"]
+
+[node name="coaster-wood-track2" parent="." instance=ExtResource("1_wvm8a")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.5, 0, 0)
+
+[node name="coaster-wood-segment2" parent="." instance=ExtResource("2_e3ncg")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.25, 0, 0)
+
+[node name="coaster-wood-segment3" parent="." instance=ExtResource("2_e3ncg")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.75, 0, 0)

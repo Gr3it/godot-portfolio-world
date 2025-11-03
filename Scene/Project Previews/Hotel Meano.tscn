@@ -1,0 +1,49 @@
+[gd_scene load_steps=10 format=3 uid="uid://b4rxfu58oo06x"]
+
+[ext_resource type="PackedScene" uid="uid://bku48ykc6gelq" path="res://Assets/kenney city kit commercial/building-j.glb" id="1_4q7b6"]
+[ext_resource type="PackedScene" uid="uid://cjv8uqgea7ate" path="res://Assets/Kenney Holiday Kit/lantern.glb" id="2_x5k4d"]
+[ext_resource type="PackedScene" uid="uid://du5j6xnw61c7h" path="res://Assets/Kenney Holiday Kit/tree.glb" id="3_fguk2"]
+[ext_resource type="PackedScene" uid="uid://bqe2se8fvp6vi" path="res://Assets/Kenney Holiday Kit/bench.glb" id="4_jiffm"]
+[ext_resource type="PackedScene" uid="uid://bow8kr632aiem" path="res://Assets/Kenney car kit/taxi.glb" id="5_i8iib"]
+[ext_resource type="PackedScene" uid="uid://b28i2eojpj2m7" path="res://Assets/Kenney car kit/firetruck.glb" id="6_fse1m"]
+[ext_resource type="PackedScene" uid="uid://0u2ygqpa5a37" path="res://Assets/Kenney Coaster Kit/stall-drinks.glb" id="7_t0x6r"]
+[ext_resource type="PackedScene" uid="uid://cvwshjsohdyyx" path="res://Assets/Kenney Coaster Kit/trash.glb" id="8_23t18"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s36ff"]
+size = Vector2(18, 9)
+
+[node name="SpacePirates" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_s36ff")
+
+[node name="building-j2" parent="." instance=ExtResource("1_4q7b6")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 2.5, 0, 1.5)
+
+[node name="lantern2" parent="." instance=ExtResource("2_x5k4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 1.5)
+
+[node name="lantern3" parent="." instance=ExtResource("2_x5k4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, 1.5)
+
+[node name="tree2" parent="." instance=ExtResource("3_fguk2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 3)
+
+[node name="bench2" parent="." instance=ExtResource("4_jiffm")]
+transform = Transform3D(-0.375, 0, -0.649519, 0, 0.75, 0, 0.649519, 0, -0.375, -3.5, 0, 3.5)
+
+[node name="bench3" parent="." instance=ExtResource("4_jiffm")]
+transform = Transform3D(-0.375, 0, 0.649519, 0, 0.75, 0, -0.649519, 0, -0.375, -7.5, 0, 3.5)
+
+[node name="taxi" parent="." instance=ExtResource("5_i8iib")]
+transform = Transform3D(-3.27835e-08, 0, -0.75, 0, 0.75, 0, 0.75, 0, -3.27835e-08, -6.5, 0, -0.5)
+
+[node name="firetruck" parent="." instance=ExtResource("6_fse1m")]
+transform = Transform3D(-3.27835e-08, 0, -0.75, 0, 0.75, 0, 0.75, 0, -3.27835e-08, -6.5, 0, -2.5)
+
+[node name="stall-drinks2" parent="." instance=ExtResource("7_t0x6r")]
+transform = Transform3D(-1.5, 0, 2.26494e-07, 0, 1.5, 0, -2.26494e-07, 0, -1.5, -3.5, 0, -1.5)
+
+[node name="trash2" parent="." instance=ExtResource("8_23t18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -0.5)

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr2qc3wupq3qk"]
+
+[ext_resource type="PackedScene" uid="uid://bpmnwgtiwx35m" path="res://Assets/Kenney Coaster Kit/support-small-skew-bottom.glb" id="1_hxno2"]
+[ext_resource type="PackedScene" uid="uid://dub2rmeqb2qgh" path="res://Assets/Kenney Coaster Kit/support-small-skew.glb" id="2_bsik2"]
+
+[node name="SupportDiagonal1" type="Node3D"]
+
+[node name="support-small-skew-bottom2" parent="." instance=ExtResource("1_hxno2")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 1.25, 0, 0)
+
+[node name="support-small-skew-bottom3" parent="." instance=ExtResource("1_hxno2")]
+transform = Transform3D(1, -8.74228e-08, 8.9407e-08, -8.74228e-08, -1, -7.8162e-15, 8.9407e-08, 0, -1, 0, 5, 0)
+
+[node name="support-small-skew2" parent="." instance=ExtResource("2_bsik2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.5, 3, 0)
+
+[node name="support-small-skew3" parent="." instance=ExtResource("2_bsik2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.75, 2, 0)
+
+[node name="support-small-skew4" parent="." instance=ExtResource("2_bsik2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1, 1, 0)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b5u6btjuspbx4"]
 
-[ext_resource type="MeshLibrary" uid="uid://vodoh1hganik" path="res://tiles_revisited.tres" id="1_dg4sv"]
+[ext_resource type="MeshLibrary" uid="uid://c5hob3ojvftue" path="res://Tiles.tres" id="1_dg4sv"]
 
 [node name="TerrainGridmap" type="Node3D"]
 

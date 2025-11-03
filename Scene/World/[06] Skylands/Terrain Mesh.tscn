@@ -521,6 +521,7 @@ multimesh = SubResource("MultiMesh_deaup")
 multimesh = SubResource("MultiMesh_bgqvc")
 
 [node name="PlaceHolder" type="Node3D" parent="."]
+visible = false
 
 [node name="platform1" type="MeshInstance3D" parent="PlaceHolder"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 29)

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://oi0joqo8s4j3"]
+
+[ext_resource type="PackedScene" uid="uid://bmaxq1s1jo7ir" path="res://Assets/KayKit Dungeon Pack/chest_uncommon.gltf.glb" id="1_r80gw"]
+[ext_resource type="PackedScene" uid="uid://b6rig68hj36f8" path="res://Assets/KayKit Dungeon Pack/chestTop_uncommon.gltf.glb" id="2_v45m1"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="chest_uncommon_gltf" parent="." instance=ExtResource("1_r80gw")]
+
+[node name="chestTop_uncommon_gltf" parent="." instance=ExtResource("2_v45m1")]
+transform = Transform3D(1, 0, 0, 0, -0.707107, 0.707107, 0, -0.707107, -0.707107, 0, 0.6, -0.6)

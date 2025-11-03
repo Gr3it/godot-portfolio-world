@@ -521,6 +521,7 @@ multimesh = SubResource("MultiMesh_pggde")
 
 [node name="PlaceHolders" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 20)
+visible = false
 
 [node name="platform1" type="MeshInstance3D" parent="PlaceHolders"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 9)

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bls5sgva74ru5"]
+
+[ext_resource type="PackedScene" uid="uid://beegbtnqvhgdf" path="res://Assets/Kenney Conveyor Kit/structure-yellow-medium.glb" id="1_2ay3j"]
+
+[node name="Gate2x" type="Node3D"]
+
+[node name="structure-yellow-medium3" parent="." instance=ExtResource("1_2ay3j")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.575, 0, 0)
+
+[node name="structure-yellow-medium5" parent="." instance=ExtResource("1_2ay3j")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.575, 0, 0)

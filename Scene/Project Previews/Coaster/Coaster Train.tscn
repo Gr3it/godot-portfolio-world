@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctpyov0w6yf2f"]
+
+[ext_resource type="PackedScene" uid="uid://2lri1qj4uyjy" path="res://Assets/Kenney Platformer Kit/coin-gold.glb" id="2_do4bu"]
+[ext_resource type="PackedScene" uid="uid://c22i7ejq6kgyi" path="res://Assets/Kenney Coaster Kit/coaster-train.glb" id="2_i84jl"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="coin-gold2" parent="." instance=ExtResource("2_do4bu")]
+transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, -0.375, 0.375, 0)
+
+[node name="coin-gold3" parent="." instance=ExtResource("2_do4bu")]
+transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, 0.25, 0.375, 0)
+
+[node name="coaster-train2" parent="." instance=ExtResource("2_i84jl")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)

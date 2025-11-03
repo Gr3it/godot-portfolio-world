@@ -1,0 +1,108 @@
+[gd_scene load_steps=18 format=3 uid="uid://2yd045uyo1b2"]
+
+[ext_resource type="PackedScene" uid="uid://bm5dq63ll883h" path="res://Assets/Kenney mini arcade/gambling-machine.glb" id="1_phyvl"]
+[ext_resource type="PackedScene" uid="uid://cx4kh6s4m3v8k" path="res://Assets/Kenney mini arcade/ticket-machine.glb" id="2_f5ppw"]
+[ext_resource type="PackedScene" uid="uid://gs7ibmeaxipd" path="res://Assets/KayKit Resources/Gold_Bar.gltf" id="3_akct7"]
+[ext_resource type="PackedScene" uid="uid://na0ycs16ijjy" path="res://Assets/KayKit Resources/Gold_Bars.gltf" id="6_lk0da"]
+[ext_resource type="PackedScene" uid="uid://cjcrokfamf8mw" path="res://Assets/KayKit Resources/Gold_Bars_Stack_Large.gltf" id="7_ocx6r"]
+[ext_resource type="PackedScene" uid="uid://dmki3etjq3i5c" path="res://Assets/KayKit Dungeon/coin_stack_large.gltf" id="8_8xg1h"]
+[ext_resource type="PackedScene" uid="uid://cfixb3mvyrc11" path="res://Assets/KayKit Dungeon/coin_stack_medium.gltf" id="9_05afg"]
+[ext_resource type="PackedScene" uid="uid://c7j0vlkgmiilh" path="res://Assets/KayKit Dungeon/coin_stack_small.gltf" id="10_7s4ua"]
+[ext_resource type="PackedScene" uid="uid://dsm4vunjq735o" path="res://Assets/KayKit Dungeon/coin.gltf" id="11_jjwou"]
+[ext_resource type="PackedScene" uid="uid://e2sn8shcgefb" path="res://Assets/KayKit Dungeon/box_small_decorated.gltf" id="12_ugkq8"]
+[ext_resource type="PackedScene" uid="uid://bwsxrvxxtdyfb" path="res://Assets/KayKit Dungeon/box_large.gltf" id="13_tu3h3"]
+[ext_resource type="PackedScene" uid="uid://br1yi6leb5t8q" path="res://Assets/KayKit Dungeon Pack/lootSackA.gltf.glb" id="15_5s7xs"]
+[ext_resource type="PackedScene" uid="uid://centhyyao1xqo" path="res://Assets/KayKit Dungeon Pack/lootSackB.gltf.glb" id="16_awiuo"]
+[ext_resource type="PackedScene" uid="uid://bqideijebcvi0" path="res://Assets/Kenney Platformer Kit/crate-item.glb" id="19_4jxq1"]
+[ext_resource type="PackedScene" uid="uid://c4qqki3eolh8t" path="res://Assets/kenny mini arena/trophy.glb" id="27_eqjy2"]
+[ext_resource type="PackedScene" uid="uid://dfj5kwmq6ib4t" path="res://Assets/Farm kit/Collectible/Collectible_Diamond_01.glb" id="30_5kw2d"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s36ff"]
+size = Vector2(18, 9)
+
+[node name="SpacePirates" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_s36ff")
+
+[node name="gambling-machine3" parent="." instance=ExtResource("1_phyvl")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0.1, 0, 0)
+
+[node name="ticket-machine2" parent="." instance=ExtResource("2_f5ppw")]
+transform = Transform3D(3.53553, 0, -3.53553, 0, 5, 0, 3.53553, 0, 3.53553, 6.3, 0, 1.6)
+
+[node name="Gold_Bar3" parent="." instance=ExtResource("3_akct7")]
+transform = Transform3D(1.44889, 0, 0.388229, 0, 1.5, 0, -0.388229, 0, 1.44889, 5.6, 0, 3.1)
+
+[node name="Gold_Bar4" parent="." instance=ExtResource("3_akct7")]
+transform = Transform3D(0.75, 0, 1.29904, 0, 1.5, 0, -1.29904, 0, 0.75, 8.3, 0, 1.7)
+
+[node name="Gold_Bars2" parent="." instance=ExtResource("6_lk0da")]
+transform = Transform3D(1.29904, 0, -0.75, 0, 1.5, 0, 0.75, 0, 1.29904, 2.5, 0, -0.9)
+
+[node name="Gold_Bars_Stack_Large2" parent="." instance=ExtResource("7_ocx6r")]
+transform = Transform3D(1.44889, 0, 0.388229, 0, 1.5, 0, -0.388229, 0, 1.44889, -6.61405, 0, 0.100387)
+
+[node name="coin_stack_large2" parent="." instance=ExtResource("8_8xg1h")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -1.9, 0, 0.6)
+
+[node name="coin_stack_medium2" parent="." instance=ExtResource("9_05afg")]
+transform = Transform3D(1.29904, 0, -0.75, 0, 1.5, 0, 0.75, 0, 1.29904, 1.9, 0, 1)
+
+[node name="coin_stack_medium3" parent="." instance=ExtResource("9_05afg")]
+transform = Transform3D(1.44889, 0, -0.388229, 0, 1.5, 0, 0.388229, 0, 1.44889, -7.37106, 0, 2.68436)
+
+[node name="coin_stack_small2" parent="." instance=ExtResource("10_7s4ua")]
+transform = Transform3D(1.44889, 0, 0.388229, 0, 1.5, 0, -0.388229, 0, 1.44889, -4.51303, 0, 0.986808)
+
+[node name="box_small_decorated2" parent="." instance=ExtResource("12_ugkq8")]
+transform = Transform3D(1.44889, 0, 0.388229, 0, 1.5, 0, -0.388229, 0, 1.44889, -5.85146, 0, 2.17366)
+
+[node name="box_large2" parent="." instance=ExtResource("13_tu3h3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9, 0, -1.1)
+
+[node name="lootSackA_gltf" parent="." instance=ExtResource("15_5s7xs")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 7.3, 0, 2.7)
+
+[node name="lootSackA_gltf2" parent="." instance=ExtResource("15_5s7xs")]
+transform = Transform3D(-0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, -0.866025, 4.8, 0, 0.7)
+
+[node name="lootSackB_gltf" parent="." instance=ExtResource("16_awiuo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -0.8)
+
+[node name="lootSackB_gltf2" parent="." instance=ExtResource("16_awiuo")]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, -8.56485, 1.3, 0.933684)
+
+[node name="crate-item2" parent="." instance=ExtResource("19_4jxq1")]
+transform = Transform3D(1.93185, 0, -0.517638, 0, 2, 0, 0.517638, 0, 1.93185, -4.70808, 0, -0.513844)
+
+[node name="crate-item3" parent="." instance=ExtResource("19_4jxq1")]
+transform = Transform3D(-1.78814e-07, 0, -2, 0, 2, 0, 2, 0, -1.78814e-07, -8.32683, 0, 0.662854)
+
+[node name="trophy2" parent="." instance=ExtResource("27_eqjy2")]
+transform = Transform3D(1.5, 0, 0, 0, 1.44889, 0.388229, 0, -0.388229, 1.44889, 6.6, 0, 3.3)
+
+[node name="trophy4" parent="." instance=ExtResource("27_eqjy2")]
+transform = Transform3D(1.44889, -0.100481, 0.375, 0, 1.44889, 0.388229, -0.388229, -0.375, 1.39952, -4.6822, 0.9, -0.417252)
+
+[node name="trophy3" parent="." instance=ExtResource("27_eqjy2")]
+transform = Transform3D(0.388229, 1.44889, -2.87868e-08, -1.44889, 0.388229, -7.71341e-09, 0, 2.98023e-08, 1.5, 4.2, 0.2, 1.5)
+
+[node name="Collectible_Diamond_012" parent="." instance=ExtResource("30_5kw2d")]
+transform = Transform3D(0.649519, 0.265165, -0.265165, 0, 0.53033, 0.53033, 0.375, -0.459279, 0.459279, -1.9, 1.6, -1.1)
+
+[node name="Collectible_Diamond_013" parent="." instance=ExtResource("30_5kw2d")]
+transform = Transform3D(0.649519, -0.265165, 0.265165, 0, 0.53033, 0.53033, -0.375, -0.459279, 0.459279, -0.7, 0.3, 1.4)
+
+[node name="coin2" parent="." instance=ExtResource("11_jjwou")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9, 0, -2.7)
+
+[node name="coin3" parent="." instance=ExtResource("11_jjwou")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 7, 0, -1.9)
+
+[node name="coin_stack_small3" parent="." instance=ExtResource("10_7s4ua")]
+transform = Transform3D(0.388229, 0, -1.44889, 0, 1.5, 0, 1.44889, 0, 0.388229, -8.36844, 0, -1.81066)
+
+[node name="coin_stack_small4" parent="." instance=ExtResource("10_7s4ua")]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 4.3, 0, -1.2)

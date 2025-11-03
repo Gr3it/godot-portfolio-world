@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://e5t4wbswq3h7"]
+
+[ext_resource type="PackedScene" uid="uid://bbhusgqntgc3c" path="res://Assets/Kenney Coaster Kit/support-small-bottom.glb" id="1_dssvf"]
+[ext_resource type="PackedScene" uid="uid://ch8y33otg68rd" path="res://Assets/Kenney Coaster Kit/support-small.glb" id="2_b0v27"]
+
+[node name="SupportDiagonal1" type="Node3D"]
+
+[node name="support-small-bottom2" parent="." instance=ExtResource("1_dssvf")]
+
+[node name="support-small-bottom3" parent="." instance=ExtResource("1_dssvf")]
+transform = Transform3D(-1, -8.74228e-08, 0, 8.74228e-08, -1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="support-small2" parent="." instance=ExtResource("2_b0v27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="support-small3" parent="." instance=ExtResource("2_b0v27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)

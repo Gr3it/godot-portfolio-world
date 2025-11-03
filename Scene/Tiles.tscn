@@ -1962,7 +1962,7 @@ shadow_mesh = SubResource("ArrayMesh_4wurr")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_onk3i"]
 resource_name = "BrownDark.001"
-albedo_color = Color(0.607141, 0.351749, 0.27004, 1)
+albedo_color = Color(0.721569, 0.454902, 0.356863, 1)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_54eax"]
 _surfaces = [{
@@ -2024,7 +2024,7 @@ shadow_mesh = SubResource("ArrayMesh_54eax")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6020n"]
 resource_name = "BrownDark.001"
-albedo_color = Color(0.607141, 0.351749, 0.27004, 1)
+albedo_color = Color(0.721569, 0.454902, 0.356863, 1)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vpkop"]
 _surfaces = [{
@@ -2086,7 +2086,7 @@ shadow_mesh = SubResource("ArrayMesh_vpkop")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rdheb"]
 resource_name = "BrownDark.003"
-albedo_color = Color(0.607141, 0.351749, 0.27004, 1)
+albedo_color = Color(0.721569, 0.454902, 0.356863, 1)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_attj0"]
 _surfaces = [{

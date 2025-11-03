@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhqjpb0msxqf3"]
+
+[ext_resource type="PackedScene" uid="uid://bihh1c0busfxi" path="res://Scene/Project Previews/Coaster/coaster.tscn" id="3_r8o3w"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s36ff"]
+size = Vector2(18, 9)
+
+[node name="SpacePirates" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_s36ff")
+
+[node name="Node3D" parent="." instance=ExtResource("3_r8o3w")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, -0.5)

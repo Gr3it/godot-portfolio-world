@@ -1,0 +1,62 @@
+[gd_scene load_steps=8 format=4 uid="uid://bsg43qo0e3gj8"]
+
+[ext_resource type="Material" uid="uid://bfjdimxfpi0sj" path="res://Materials/White.tres" id="1_owmrf"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_spf37"]
+load_path = "res://.godot/imported/broken_down_concrete2_Height.png-fd1a4644710a9119f7436fec4eddd3e3.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2vo2l"]
+load_path = "res://.godot/imported/broken_down_concrete2_Normal-dx.png-02b521a1179d457bc80f8102ee0302cc.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_julo1"]
+albedo_color = Color(0.384314, 0.494118, 0.917647, 1)
+normal_texture = SubResource("CompressedTexture2D_2vo2l")
+heightmap_texture = SubResource("CompressedTexture2D_spf37")
+
+[sub_resource type="SphereMesh" id="SphereMesh_368ai"]
+material = SubResource("StandardMaterial3D_julo1")
+radius = 0.8
+height = 1.6
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pamk2"]
+_surfaces = [{
+"aabb": AABB(-0.714375, -1.16337, -0.5, 1.42875, 2.32675, 0.5),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAEABQACAAMABQAAAAIABgAEAAAABgAAAAUABwABAAQABwAEAAYAAwABAAcABQAHAAYABQADAAcACAAJAAoACgAJAAsACAAMAAkADAALAAkACAAKAA0ACgALAA0ADgAMAAgACAANAA4ADAAPAAsADQALAA8ADgAPAAwADQAPAA4AEAARABIAEAATABEAEwAUABEAEwAVABQA"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("/3///wAAAAD/fy5PAAAAAPL/o30AAAAA8v+jff7/AAAMAKN9AAAAAP9////+/wAADACjff7/AAD/fy5P/v8AAPN/AAD//wAAAAC8bgAAAAAAALxu/v8AAPN/TkAAAAAA838AAAAAAADzf05A/v8AAP//vG7+/wAA//+8bgAAAAAAAJx9/v8AAPN/Jk8AAAAAAACcfQAAAADzfyZP/v8AAPL/nH0AAAAA8v+cff7/AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_djj63"]
+resource_name = "Ethereum_Ethereum_logo_svg"
+_surfaces = [{
+"aabb": AABB(-0.714375, -1.16337, -0.5, 1.42875, 2.32675, 0.5),
+"attribute_data": PackedByteArray("//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8="),
+"format": 34896613391,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUA"),
+"material": ExtResource("1_owmrf"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 56,
+"vertex_data": PackedByteArray("/3///wAA////fy5PAAD///L/o30AAP//DACjfQAA///zfwAA///6zwAAvG4AAPrPAAC8bv7/+s/zfwAAAAD6z/N/TkD+/5Lo//+8bgAAkuj//7xu/v+S6PN/TkAAAJLo/3////7//7//fy5P/v//vwwAo33+//+/8v+jff7//7//fy5P/v+J6AwAo30AAInoDACjff7/iej/fy5PAACJ6PN/AAAAAP//839OQAAA//8AALxuAAD/////vG4AAP//838AAP///7/zf05A/v//v///vG7+//+/AAC8bv7//7//f////v/0/fL/o30AAPT98v+jff7/9P3/f///AAD0/f//vG7+/yT9838AAAAAJP3zfwAA//8k/f//vG4AACT9AACcff7/iejzfyZPAACJ6AAAnH0AAIno838mT/7/iegMAKN9/v9WzP9///8AAFbM/3////7/VswMAKN9AABWzPN/Jk/+/wr58v+cfQAACvnzfyZPAAAK+fL/nH3+/wr5AAC8bv7/Cvnzf05AAAAK+fN/TkD+/wr5AAC8bgAACvny/6N9/v8K+f9/Lk8AAAr5/38uT/7/Cvny/6N9AAAK+f8//7//P/+//z//v/8//79IszP8SLMz/EizM/xIszP8ZHicvmR4nL5keJy+ZHicvv9//3//f/9//3//f/9//39fwWT4X8Fk+F/BZPhfwWT4/z//v/8//7//P/+//z//v/9//3//f/9//3//f/9//39VHf0sVR39LFUd/SxVHf0s2akNX9mpDV/ZqQ1f2akNX1/BZPhfwWT4X8Fk+F/BZPghfenQIX3p0CF96dAhfenQPZY/TT2WP009lj9NPZY/TcAyPBbAMjwWwDI8FsAyPBY+lkBNPpZATT6WQE0+lkBN")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pamk2")
+
+[node name="MeshInstance3D8" type="MeshInstance3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+mesh = SubResource("SphereMesh_368ai")
+
+[node name="Ethereum" type="Node3D" parent="."]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.8)
+
+[node name="Ethereum_logo_svg" type="MeshInstance3D" parent="Ethereum"]
+mesh = SubResource("ArrayMesh_djj63")
+skeleton = NodePath("")
