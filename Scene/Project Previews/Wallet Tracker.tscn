@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://c4mr4mqrtgnqq"]
+[gd_scene load_steps=13 format=4 uid="uid://c4mr4mqrtgnqq"]
 
 [ext_resource type="PackedScene" uid="uid://yewqahqp65xw" path="res://Scene/Project Previews/Wallet Tracker/Polygon.tscn" id="1_fpaci"]
 [ext_resource type="PackedScene" uid="uid://dlth42y8qhtkf" path="res://Scene/Project Previews/Wallet Tracker/Tron.tscn" id="1_hrqds"]
@@ -6,9 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://donb6gcl6yh25" path="res://Scene/Project Previews/Wallet Tracker/Arbitrum.tscn" id="2_2rp6c"]
 [ext_resource type="PackedScene" uid="uid://3nxrm3vd3lay" path="res://Scene/Project Previews/Wallet Tracker/BNB.tscn" id="2_julo1"]
 [ext_resource type="PackedScene" uid="uid://bsg43qo0e3gj8" path="res://Scene/Project Previews/Wallet Tracker/Ethereum.tscn" id="3_julo1"]
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_s36ff"]
-size = Vector2(18, 9)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sbr8l"]
 resource_name = "bianco"
@@ -144,10 +141,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_hxow8")
 
 [node name="SpacePirates" type="Node3D"]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-visible = false
-mesh = SubResource("PlaneMesh_s36ff")
 
 [node name="MeshInstance3D3" parent="." instance=ExtResource("1_oxe5n")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.86514, 2.78432, -1.27329)

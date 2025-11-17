@@ -1,17 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://drl43dpddmpmw"]
+[gd_scene load_steps=4 format=3 uid="uid://drl43dpddmpmw"]
 
 [ext_resource type="PackedScene" uid="uid://f5r3emvtdwji" path="res://Assets/Kenney mini arcade/claw-machine.glb" id="1_bsioh"]
 [ext_resource type="PackedScene" uid="uid://bry05yqnf37x5" path="res://Assets/Kenney mini arcade/pinball.glb" id="2_u0eoc"]
 [ext_resource type="PackedScene" uid="uid://bfs1rvrqo5unv" path="res://Assets/Kenney mini arcade/arcade-machine.glb" id="3_imtuw"]
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_s36ff"]
-size = Vector2(18, 9)
-
 [node name="SpacePirates" type="Node3D"]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-visible = false
-mesh = SubResource("PlaneMesh_s36ff")
 
 [node name="claw-machine2" parent="." instance=ExtResource("1_bsioh")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, -1)

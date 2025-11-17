@@ -1,9 +1,6 @@
-[gd_scene load_steps=50 format=4 uid="uid://dmipkoh1be3yn"]
+[gd_scene load_steps=48 format=4 uid="uid://dmipkoh1be3yn"]
 
-[ext_resource type="PackedScene" uid="uid://l0soc51bs5iq" path="res://Scene/World/[01] Forest/Terrain Mesh.tscn" id="1_6jwlg"]
-[ext_resource type="PackedScene" uid="uid://c2gqk5vm8kai4" path="res://Scene/Vehicles Paths.tscn" id="2_msotb"]
 [ext_resource type="Material" uid="uid://cp0qjpcgaxqn2" path="res://Materials/BridgeDark.tres" id="2_sabe1"]
-[ext_resource type="PackedScene" uid="uid://c6jymesurebbh" path="res://Scene/flag.tscn" id="3_msotb"]
 [ext_resource type="PackedScene" uid="uid://d178vh0f37jbo" path="res://Assets/KayKit Medieval Hex/waterlily_A.gltf" id="5_kghr5"]
 [ext_resource type="PackedScene" uid="uid://cml3at15e0rt3" path="res://Assets/KayKit Medieval Hex/waterlily_B.gltf" id="6_btpuh"]
 [ext_resource type="PackedScene" uid="uid://tyhywpxwl85s" path="res://Assets/KayKit Medieval Hex/waterplant_A.gltf" id="7_a6v75"]
@@ -42,6 +39,7 @@
 [ext_resource type="PackedScene" uid="uid://b6du44tj5xfg2" path="res://Assets/KayKit Nature/Grass_1_D_Singlesided_Color1.gltf" id="40_x33wn"]
 [ext_resource type="PackedScene" uid="uid://cltp2emxppyjs" path="res://Assets/KayKit Nature/Grass_1_A_Color1.gltf" id="41_m50tg"]
 [ext_resource type="PackedScene" uid="uid://csiehxucyq0h4" path="res://Assets/KayKit Nature/Grass_2_C_Color1.gltf" id="42_banfd"]
+[ext_resource type="PackedScene" uid="uid://l0soc51bs5iq" path="res://Scene/World/[01] Forest/Terrain Mesh.tscn" id="42_gp6lu"]
 [ext_resource type="PackedScene" uid="uid://cgdge0u5iieg6" path="res://Assets/Kenney Platformer Kit/flowers-tall.glb" id="43_00yri"]
 [ext_resource type="PackedScene" uid="uid://b72wnxaaavwu6" path="res://Assets/Kenney Platformer Kit/flowers.glb" id="44_xhdc5"]
 
@@ -139,11 +137,6 @@ shadow_mesh = SubResource("ArrayMesh_trg51")
 
 [node name="Forest" type="Node3D"]
 
-[node name="VehiclesPaths" parent="." instance=ExtResource("2_msotb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -32)
-
-[node name="TerrainMesh" parent="." instance=ExtResource("1_6jwlg")]
-
 [node name="Bridge" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 36)
 metadata/_edit_group_ = true
@@ -159,9 +152,6 @@ transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 0, -0.
 mesh = SubResource("ArrayMesh_nynjq")
 skeleton = NodePath("")
 metadata/_edit_group_ = true
-
-[node name="flag" parent="." instance=ExtResource("3_msotb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 14.75)
 
 [node name="Nature" type="Node3D" parent="."]
 
@@ -1066,3 +1056,5 @@ transform = Transform3D(0, 0, -4, 0, 4, 0, 4, 0, 0, -25.25, 0.25, 40)
 
 [node name="Flower Camp" parent="." instance=ExtResource("13_c6afx")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.1, 0, 94.5)
+
+[node name="TerrainMesh" parent="." instance=ExtResource("42_gp6lu")]

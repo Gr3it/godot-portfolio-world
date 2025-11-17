@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://l0soc51bs5iq"]
+[gd_scene load_steps=29 format=4 uid="uid://l0soc51bs5iq"]
 
 [ext_resource type="Material" uid="uid://cpq72mcnmgwlj" path="res://Materials/Forest.tres" id="1_br4yd"]
 [ext_resource type="Material" uid="uid://d15327h1vpq77" path="res://Materials/Ground.tres" id="2_etyei"]
@@ -483,14 +483,6 @@ instance_count = 41
 mesh = SubResource("ArrayMesh_sedru")
 buffer = PackedFloat32Array(0, 0, 1, -27, 0, 1, 0, -1, -1, 0, 0, 75, 0, 0, 1, -27, 0, 1, 0, -1, -1, 0, 0, 77, 0, 0, 1, -25, 0, 1, 0, -1, -1, 0, 0, 73, 0, 0, 1, -25, 0, 1, 0, -1, -1, 0, 0, 75, 0, 0, 1, -25, 0, 1, 0, -1, -1, 0, 0, 77, 0, 0, 1, -25, 0, 1, 0, -1, -1, 0, 0, 79, 0, 0, 1, -23, 0, 1, 0, -1, -1, 0, 0, 71, 0, 0, 1, -23, 0, 1, 0, -1, -1, 0, 0, 73, 0, 0, 1, -23, 0, 1, 0, -1, -1, 0, 0, 75, 0, 0, 1, -23, 0, 1, 0, -1, -1, 0, 0, 77, 0, 0, 1, -23, 0, 1, 0, -1, -1, 0, 0, 79, 0, 0, 1, -23, 0, 1, 0, -1, -1, 0, 0, 81, 0, 0, 1, -21, 0, 1, 0, -1, -1, 0, 0, 71, 0, 0, 1, -21, 0, 1, 0, -1, -1, 0, 0, 73, 0, 0, 1, -21, 0, 1, 0, -1, -1, 0, 0, 75, 0, 0, 1, -21, 0, 1, 0, -1, -1, 0, 0, 77, 0, 0, 1, -21, 0, 1, 0, -1, -1, 0, 0, 79, 0, 0, 1, -21, 0, 1, 0, -1, -1, 0, 0, 81, 0, 0, 1, -21, 0, 1, 0, -1, -1, 0, 0, 83, 0, 0, 1, -19, 0, 1, 0, -1, -1, 0, 0, 71, 0, 0, 1, -19, 0, 1, 0, -1, -1, 0, 0, 73, 0, 0, 1, -19, 0, 1, 0, -1, -1, 0, 0, 75, 0, 0, 1, -19, 0, 1, 0, -1, -1, 0, 0, 77, 0, 0, 1, -19, 0, 1, 0, -1, -1, 0, 0, 79, 0, 0, 1, -19, 0, 1, 0, -1, -1, 0, 0, 81, 0, 0, 1, -19, 0, 1, 0, -1, -1, 0, 0, 83, 0, 0, 1, -17, 0, 1, 0, -1, -1, 0, 0, 73, 0, 0, 1, -17, 0, 1, 0, -1, -1, 0, 0, 75, 0, 0, 1, -17, 0, 1, 0, -1, -1, 0, 0, 77, 0, 0, 1, -17, 0, 1, 0, -1, -1, 0, 0, 79, 0, 0, 1, -17, 0, 1, 0, -1, -1, 0, 0, 81, 0, 0, 1, -17, 0, 1, 0, -1, -1, 0, 0, 83, 0, 0, 1, -17, 0, 1, 0, -1, -1, 0, 0, 85, 0, 0, 1, -15, 0, 1, 0, -1, -1, 0, 0, 73, 0, 0, 1, -15, 0, 1, 0, -1, -1, 0, 0, 75, 0, 0, 1, -15, 0, 1, 0, -1, -1, 0, 0, 77, 0, 0, 1, -15, 0, 1, 0, -1, -1, 0, 0, 79, 0, 0, 1, -15, 0, 1, 0, -1, -1, 0, 0, 81, 0, 0, 1, -15, 0, 1, 0, -1, -1, 0, 0, 83, 0, 0, 1, -13, 0, 1, 0, -1, -1, 0, 0, 79, 0, 0, 1, -13, 0, 1, 0, -1, -1, 0, 0, 81)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6epv"]
-transparency = 1
-albedo_color = Color(1, 1, 1, 0.247059)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_gkrxp"]
-material = SubResource("StandardMaterial3D_h6epv")
-size = Vector2(18, 18)
-
 [node name="TerrainMesh" type="Node3D"]
 
 [node name="ConvertedGridMap" type="Node3D" parent="."]
@@ -518,25 +510,3 @@ multimesh = SubResource("MultiMesh_qu5x4")
 
 [node name="square_water_detail" type="MultiMeshInstance3D" parent="ConvertedGridMap"]
 multimesh = SubResource("MultiMesh_pggde")
-
-[node name="PlaceHolders" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 20)
-visible = false
-
-[node name="platform1" type="MeshInstance3D" parent="PlaceHolders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 9)
-mesh = SubResource("PlaneMesh_gkrxp")
-
-[node name="platform2" type="MeshInstance3D" parent="PlaceHolders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 33)
-mesh = SubResource("PlaneMesh_gkrxp")
-skeleton = NodePath("../platform1")
-
-[node name="platform3" type="MeshInstance3D" parent="PlaceHolders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 57)
-mesh = SubResource("PlaneMesh_gkrxp")
-
-[node name="platform4" type="MeshInstance3D" parent="PlaceHolders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 81)
-mesh = SubResource("PlaneMesh_gkrxp")
-skeleton = NodePath("../platform1")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://dqrpbxouad83l"]
+[gd_scene load_steps=30 format=4 uid="uid://dqrpbxouad83l"]
 
 [ext_resource type="Material" uid="uid://d15327h1vpq77" path="res://Materials/Ground.tres" id="2_etyei"]
 [ext_resource type="Material" uid="uid://c5xvhbv50vyft" path="res://Materials/Sand.tres" id="3_3rcty"]
@@ -484,14 +484,6 @@ instance_count = 5
 mesh = SubResource("ArrayMesh_y12ne")
 buffer = PackedFloat32Array(-1, 0, 0, 15, 0, 1, 0, -1, 0, 0, -1, 1, -1, 0, 0, 17, 0, 1, 0, -1, 0, 0, -1, 1, -1, 0, 0, 19, 0, 1, 0, -1, 0, 0, -1, 1, -1, 0, 0, 19, 0, 1, 0, -1, 0, 0, -1, 3, -1, 0, 0, 21, 0, 1, 0, -1, 0, 0, -1, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vu0sx"]
-transparency = 1
-albedo_color = Color(1, 1, 1, 0.247059)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_i6a8u"]
-material = SubResource("StandardMaterial3D_vu0sx")
-size = Vector2(18, 18)
-
 [node name="TerrainMesh" type="Node3D"]
 
 [node name="ConvertedGridMap" type="Node3D" parent="."]
@@ -519,10 +511,3 @@ multimesh = SubResource("MultiMesh_deaup")
 
 [node name="square_plain" type="MultiMeshInstance3D" parent="ConvertedGridMap"]
 multimesh = SubResource("MultiMesh_bgqvc")
-
-[node name="PlaceHolder" type="Node3D" parent="."]
-visible = false
-
-[node name="platform1" type="MeshInstance3D" parent="PlaceHolder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 29)
-mesh = SubResource("PlaneMesh_i6a8u")

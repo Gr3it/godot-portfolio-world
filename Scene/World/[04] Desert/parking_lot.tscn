@@ -1,0 +1,94 @@
+[gd_scene load_steps=14 format=3 uid="uid://rlikfmc0lqin"]
+
+[ext_resource type="PackedScene" uid="uid://c7nikyb55521q" path="res://Assets/Kenney Fantasy Town Kit/fence-curved.glb" id="1_ud86b"]
+[ext_resource type="PackedScene" uid="uid://rqmmtqvvns72" path="res://Assets/Kenney Fantasy Town Kit/fence-broken.glb" id="2_8ryvr"]
+[ext_resource type="PackedScene" uid="uid://d3okjup1rjda7" path="res://Assets/Kenney Fantasy Town Kit/fence.glb" id="3_nhuk1"]
+[ext_resource type="PackedScene" uid="uid://bsej3ll8eq4k4" path="res://Assets/KayKit Resources/Parts_Pile_Small.gltf" id="4_g8v0b"]
+[ext_resource type="PackedScene" uid="uid://dybfxhygrjq25" path="res://Assets/KayKit Resources/Parts_Pile_Medium.gltf" id="5_gtseq"]
+[ext_resource type="PackedScene" uid="uid://df6xsosy1xat7" path="res://Assets/KayKit Resources/Parts_Cog.gltf" id="6_1x2ry"]
+[ext_resource type="PackedScene" uid="uid://dgvtkji7h6grn" path="res://Assets/KayKit Resources/Textiles_Stack_Small.gltf" id="7_sb73a"]
+[ext_resource type="PackedScene" uid="uid://h5s784y3nu8n" path="res://Assets/KayKit Resources/Textiles_Stack_Large_Colored.gltf" id="8_ttgy8"]
+[ext_resource type="PackedScene" uid="uid://8p7radkgqe00" path="res://Assets/KayKit Resources/Fuel_A_Barrels.gltf" id="9_qdv13"]
+[ext_resource type="PackedScene" uid="uid://bukc1wu4ydr0i" path="res://Assets/KayKit Resources/Fuel_A_Jerrycan.gltf" id="10_jfpyv"]
+[ext_resource type="PackedScene" uid="uid://cu8r3q34ax6hc" path="res://Assets/KayKit Resources/Pallet_Wood_Covered_B.gltf" id="11_uk4vd"]
+[ext_resource type="PackedScene" uid="uid://cvwmd08hcv26k" path="res://Assets/KayKit Resources/Fuel_A_Barrel.gltf" id="12_m0kdb"]
+[ext_resource type="PackedScene" uid="uid://7j2d161235ow" path="res://Assets/Kenney Platformer Kit/arrows.glb" id="13_8ryvr"]
+
+[node name="Parking Lot" type="Node3D"]
+
+[node name="Gears" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.75, 0, -2)
+metadata/_edit_group_ = true
+
+[node name="Parts_Pile_Small2" parent="Gears" instance=ExtResource("4_g8v0b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.25)
+
+[node name="Parts_Pile_Medium2" parent="Gears" instance=ExtResource("5_gtseq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+
+[node name="Parts_Cog2" parent="Gears" instance=ExtResource("6_1x2ry")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.75, 0, 0.75)
+
+[node name="Parts_Cog3" parent="Gears" instance=ExtResource("6_1x2ry")]
+transform = Transform3D(0.75, 0, 0, 0, 0.375, 0.649519, 0, -0.649519, 0.375, -0.25, 0.1, 0.5)
+
+[node name="Cloths" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1.75)
+metadata/_edit_group_ = true
+
+[node name="Textiles_Stack_Small2" parent="Cloths" instance=ExtResource("7_sb73a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, -0.25)
+
+[node name="Textiles_Stack_Large_Colored2" parent="Cloths" instance=ExtResource("8_ttgy8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Fuel" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 0, -6.25)
+metadata/_edit_group_ = true
+
+[node name="Fuel_A_Barrels2" parent="Fuel" instance=ExtResource("9_qdv13")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0.25, 0)
+
+[node name="Fuel_A_Jerrycan2" parent="Fuel" instance=ExtResource("10_jfpyv")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -0.5, 0, 1)
+
+[node name="Pallet_Wood_Covered_B2" parent="Fuel" instance=ExtResource("11_uk4vd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="Fuel_A_Barrel2" parent="Fuel" instance=ExtResource("12_m0kdb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -0.25)
+
+[node name="Fences" type="Node3D" parent="."]
+
+[node name="fence-curved2" parent="Fences" instance=ExtResource("1_ud86b")]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 3.5, 0, 3.25)
+
+[node name="fence-broken2" parent="Fences" instance=ExtResource("2_8ryvr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.5, 0, -0.75)
+
+[node name="fence-broken4" parent="Fences" instance=ExtResource("2_8ryvr")]
+transform = Transform3D(0, 0, -2, 0, 2, 0, 2, 0, 0, -2.5, 0, 3.25)
+
+[node name="fence-broken3" parent="Fences" instance=ExtResource("2_8ryvr")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -0.5, 0, -2.75)
+
+[node name="fence-curved3" parent="Fences" instance=ExtResource("1_ud86b")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.5, 0, -2.75)
+
+[node name="fence-curved4" parent="Fences" instance=ExtResource("1_ud86b")]
+transform = Transform3D(5.96046e-08, 0, 2, 0, 2, 0, -2, 0, 5.96046e-08, -2.5, 0, -2.75)
+
+[node name="fence2" parent="Fences" instance=ExtResource("3_nhuk1")]
+transform = Transform3D(2, 0, -8.74228e-08, 0, 2, 0, 8.74228e-08, 0, 2, 3.5, 0, 1.25)
+
+[node name="fence3" parent="Fences" instance=ExtResource("3_nhuk1")]
+transform = Transform3D(-1.74846e-07, 0, -2, 0, 2, 0, 2, 0, -1.74846e-07, 1.5, 0, 3.25)
+
+[node name="fence4" parent="Fences" instance=ExtResource("3_nhuk1")]
+transform = Transform3D(-1.74846e-07, 0, -2, 0, 2, 0, 2, 0, -1.74846e-07, -0.5, 0, 3.25)
+
+[node name="fence5" parent="Fences" instance=ExtResource("3_nhuk1")]
+transform = Transform3D(3.49691e-07, 0, 2, 0, 2, 0, -2, 0, 3.49691e-07, 1.5, 0, -2.75)
+
+[node name="arrows" parent="." instance=ExtResource("13_8ryvr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.5, 0, -2.5)

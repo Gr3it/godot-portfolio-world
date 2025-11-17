@@ -4,4 +4,4 @@
 
 [node name="City" type="Node3D"]
 
-[node name="TerrainMesh" parent="." instance=ExtResource("1_kut83")]
+[node name="Terrain Mesh Optimized" parent="." instance=ExtResource("1_kut83")]

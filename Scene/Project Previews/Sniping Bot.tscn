@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://2yd045uyo1b2"]
+[gd_scene load_steps=17 format=3 uid="uid://2yd045uyo1b2"]
 
 [ext_resource type="PackedScene" uid="uid://bm5dq63ll883h" path="res://Assets/Kenney mini arcade/gambling-machine.glb" id="1_phyvl"]
 [ext_resource type="PackedScene" uid="uid://cx4kh6s4m3v8k" path="res://Assets/Kenney mini arcade/ticket-machine.glb" id="2_f5ppw"]
@@ -17,14 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://c4qqki3eolh8t" path="res://Assets/kenny mini arena/trophy.glb" id="27_eqjy2"]
 [ext_resource type="PackedScene" uid="uid://dfj5kwmq6ib4t" path="res://Assets/Farm kit/Collectible/Collectible_Diamond_01.glb" id="30_5kw2d"]
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_s36ff"]
-size = Vector2(18, 9)
-
 [node name="SpacePirates" type="Node3D"]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-visible = false
-mesh = SubResource("PlaneMesh_s36ff")
 
 [node name="gambling-machine3" parent="." instance=ExtResource("1_phyvl")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0.1, 0, 0)

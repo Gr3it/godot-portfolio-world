@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://bcav8kwikr1j6"]
+[gd_scene load_steps=30 format=4 uid="uid://bcav8kwikr1j6"]
 
 [ext_resource type="Material" uid="uid://cpq72mcnmgwlj" path="res://Materials/Forest.tres" id="1_br4yd"]
 [ext_resource type="Material" uid="uid://ggm7p8i08hb" path="res://Materials/Land.tres" id="1_hyf5j"]
@@ -325,14 +325,6 @@ instance_count = 2
 mesh = SubResource("ArrayMesh_vtve8")
 buffer = PackedFloat32Array(1, 0, 0, 23, 0, 1, 0, -1, 0, 0, 1, 95, 1, 0, 0, 25, 0, 1, 0, -1, 0, 0, 1, 95)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hyf5j"]
-transparency = 1
-albedo_color = Color(1, 1, 1, 0.247059)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_h814x"]
-material = SubResource("StandardMaterial3D_hyf5j")
-size = Vector2(18, 18)
-
 [node name="TerrainMesh" type="Node3D"]
 
 [node name="ConvertedGridMap" type="Node3D" parent="."]
@@ -363,25 +355,3 @@ multimesh = SubResource("MultiMesh_v8dwm")
 
 [node name="square_rock" type="MultiMeshInstance3D" parent="ConvertedGridMap"]
 multimesh = SubResource("MultiMesh_cmw16")
-
-[node name="PlaceHolders" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 6)
-visible = false
-
-[node name="platform1" type="MeshInstance3D" parent="PlaceHolders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 9)
-mesh = SubResource("PlaneMesh_h814x")
-
-[node name="platform2" type="MeshInstance3D" parent="PlaceHolders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 33)
-mesh = SubResource("PlaneMesh_h814x")
-skeleton = NodePath("../platform1")
-
-[node name="platform3" type="MeshInstance3D" parent="PlaceHolders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 57)
-mesh = SubResource("PlaneMesh_h814x")
-
-[node name="platform4" type="MeshInstance3D" parent="PlaceHolders"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 81)
-mesh = SubResource("PlaneMesh_h814x")
-skeleton = NodePath("../platform1")

@@ -17,6 +17,8 @@ heightmap_texture = SubResource("CompressedTexture2D_spf37")
 material = SubResource("StandardMaterial3D_7dp1f")
 radius = 0.41
 height = 0.82
+radial_segments = 24
+rings = 12
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xuoqy"]
 _surfaces = [{

@@ -1,7 +1,5 @@
-[gd_scene load_steps=15 format=4 uid="uid://bxyr6u1s28i4e"]
+[gd_scene load_steps=14 format=4 uid="uid://bxyr6u1s28i4e"]
 
-[ext_resource type="PackedScene" uid="uid://dqrpbxouad83l" path="res://Scene/World/[06] Skylands/Terrain Mesh.tscn" id="1_t4nst"]
-[ext_resource type="PackedScene" uid="uid://c2gqk5vm8kai4" path="res://Scene/Vehicles Paths.tscn" id="2_sjs7b"]
 [ext_resource type="PackedScene" uid="uid://brnijofp17knk" path="res://Scene/World/[06] Skylands/island.tscn" id="3_bfjxw"]
 [ext_resource type="PackedScene" uid="uid://bav85lqgpatgj" path="res://Assets/Farm kit/Cloud/Cloud_01.glb" id="3_s11fx"]
 [ext_resource type="PackedScene" uid="uid://i3lgv5165sxa" path="res://Assets/Farm kit/Cloud/Cloud_03.glb" id="4_sjs7b"]
@@ -10,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ctix5iyd280um" path="res://Assets/Kenny Watercraft Kit/ship-ocean-liner-small.glb" id="8_ldnnb"]
 [ext_resource type="PackedScene" uid="uid://clsh6eoc8h1oc" path="res://Assets/Kenny Pirates Kit/rocks-b.glb" id="9_senml"]
 [ext_resource type="PackedScene" uid="uid://2hbo2a1holmf" path="res://Assets/Kenny Pirates Kit/rocks-c.glb" id="10_jxeg0"]
+[ext_resource type="PackedScene" uid="uid://dqrpbxouad83l" path="res://Scene/World/[06] Skylands/Terrain Mesh.tscn" id="11_jxeg0"]
 [ext_resource type="PackedScene" uid="uid://dihvr4eepu1n0" path="res://Assets/Kenny Pirates Kit/rocks-a.glb" id="11_xhjb0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sjs7b"]
@@ -50,11 +49,6 @@ shadow_mesh = SubResource("ArrayMesh_ni1go")
 
 [node name="Skylands" type="Node3D"]
 
-[node name="VehiclesPaths" parent="." instance=ExtResource("2_sjs7b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -484)
-
-[node name="TerrainMesh" parent="." instance=ExtResource("1_t4nst")]
-
 [node name="Island" parent="." instance=ExtResource("3_bfjxw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 0, 30.5)
 
@@ -94,6 +88,26 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 10, 0.5, 4.5)
 [node name="Cloud_031" parent="Clouds" instance=ExtResource("5_5hdnp")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.5, 0.5, 10.5)
 
+[node name="Rocks" type="Node3D" parent="."]
+
+[node name="rocks-b2" parent="Rocks" instance=ExtResource("9_senml")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -28, 0, 32.5)
+
+[node name="rocks-b3" parent="Rocks" instance=ExtResource("9_senml")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -14.5, 0, 9.5)
+
+[node name="rocks-b4" parent="Rocks" instance=ExtResource("9_senml")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 24.5, 0, 18.5)
+
+[node name="rocks-c2" parent="Rocks" instance=ExtResource("10_jxeg0")]
+transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 39, 0, 9)
+
+[node name="rocks-a2" parent="Rocks" instance=ExtResource("11_xhjb0")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 42, 0, 31.5)
+
+[node name="rocks-a3" parent="Rocks" instance=ExtResource("11_xhjb0")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 26, 0, 49)
+
 [node name="meteor_detailed" parent="." instance=ExtResource("6_sjs7b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.5, 2.5, 20)
 
@@ -105,20 +119,4 @@ transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 18.5, 2.5, 32.5)
 mesh = SubResource("ArrayMesh_ldnnb")
 skeleton = NodePath("")
 
-[node name="rocks-b2" parent="." instance=ExtResource("9_senml")]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -28, 0, 32.5)
-
-[node name="rocks-b3" parent="." instance=ExtResource("9_senml")]
-transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -14.5, 0, 9.5)
-
-[node name="rocks-b4" parent="." instance=ExtResource("9_senml")]
-transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 24.5, 0, 18.5)
-
-[node name="rocks-c2" parent="." instance=ExtResource("10_jxeg0")]
-transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 39, 0, 9)
-
-[node name="rocks-a2" parent="." instance=ExtResource("11_xhjb0")]
-transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 42, 0, 31.5)
-
-[node name="rocks-a3" parent="." instance=ExtResource("11_xhjb0")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 26, 0, 49)
+[node name="Terrain Mesh Optimized" parent="." instance=ExtResource("11_jxeg0")]

@@ -1,0 +1,150 @@
+[gd_scene load_steps=14 format=3 uid="uid://dju4ak5rtjd66"]
+
+[ext_resource type="PackedScene" uid="uid://rlikfmc0lqin" path="res://Scene/World/[04] Desert/parking_lot.tscn" id="2_7dolk"]
+[ext_resource type="PackedScene" uid="uid://bkfglk4p45h75" path="res://Assets/Kenny Pirates Kit/palm-bend.glb" id="14_6gri6"]
+[ext_resource type="PackedScene" uid="uid://xhe2g2nv2m10" path="res://Assets/Kenny Pirates Kit/palm-detailed-bend.glb" id="15_4cjv1"]
+[ext_resource type="PackedScene" uid="uid://bb2v8q17g8wj8" path="res://Assets/Kenny Pirates Kit/palm-detailed-straight.glb" id="16_bka2y"]
+[ext_resource type="PackedScene" uid="uid://deq6uf8hsr7tt" path="res://Assets/Kenny Pirates Kit/palm-straight.glb" id="17_b4f7f"]
+[ext_resource type="PackedScene" uid="uid://cn04d7utne15v" path="res://Assets/Kenny Pirates Kit/hole.glb" id="18_vj7b2"]
+[ext_resource type="PackedScene" uid="uid://db6vranil2o7w" path="res://Assets/Kenny Pirates Kit/rocks-sand-b.glb" id="19_n43st"]
+[ext_resource type="PackedScene" uid="uid://c6lhxii5v5na1" path="res://Assets/Kenny Pirates Kit/patch-sand-foliage.glb" id="20_31viq"]
+[ext_resource type="PackedScene" uid="uid://dyw3kpguawan3" path="res://Assets/Kenny Pirates Kit/rocks-sand-a.glb" id="21_0jrps"]
+[ext_resource type="PackedScene" uid="uid://46i6njg3lmbo" path="res://Assets/Kenny Survival Kit/rock-flat.glb" id="22_bql38"]
+[ext_resource type="PackedScene" uid="uid://dckwmtm8cfsrq" path="res://Assets/Kenny Survival Kit/resource-stone-large.glb" id="23_yw50k"]
+[ext_resource type="PackedScene" uid="uid://clwe07ewtu8ru" path="res://Scene/World/[04] Desert/Optimized/Tower.glb" id="24_4dr4d"]
+[ext_resource type="PackedScene" uid="uid://bydsgyjttcjbw" path="res://Scene/World/[04] Desert/Optimized/Terrain Mesh Optimized.glb" id="25_lhwap"]
+
+[node name="Desert" type="Node3D"]
+
+[node name="Parking Lot" parent="." instance=ExtResource("2_7dolk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 42)
+
+[node name="Nature" type="Node3D" parent="."]
+
+[node name="palm-bend2" parent="Nature" instance=ExtResource("14_6gri6")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -32.3767, 0, 42.6593)
+
+[node name="palm-detailed-bend2" parent="Nature" instance=ExtResource("15_4cjv1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.75, 0, 44.25)
+
+[node name="palm-detailed-bend3" parent="Nature" instance=ExtResource("15_4cjv1")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -21.5, 0, 13.75)
+
+[node name="palm-detailed-straight2" parent="Nature" instance=ExtResource("16_bka2y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.25, 41.5)
+
+[node name="palm-detailed-straight4" parent="Nature" instance=ExtResource("16_bka2y")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 4.5, 0.25, 18.5)
+
+[node name="palm-straight2" parent="Nature" instance=ExtResource("17_b4f7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.75, 0, 33.25)
+
+[node name="palm-straight5" parent="Nature" instance=ExtResource("17_b4f7f")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 42.5, 0, 22)
+
+[node name="palm-detailed-straight3" parent="Nature" instance=ExtResource("16_bka2y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.5, 0, 27)
+
+[node name="palm-straight3" parent="Nature" instance=ExtResource("17_b4f7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.75, 0, 24.25)
+
+[node name="hole2" parent="Nature" instance=ExtResource("18_vj7b2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.75, 0, 34)
+
+[node name="hole3" parent="Nature" instance=ExtResource("18_vj7b2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3263, 0, 29.6458)
+
+[node name="hole4" parent="Nature" instance=ExtResource("18_vj7b2")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -15.1737, 0, 26.6458)
+
+[node name="palm-straight4" parent="Nature" instance=ExtResource("17_b4f7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.75, 0, 28)
+
+[node name="rocks-sand-b2" parent="Nature" instance=ExtResource("19_n43st")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.25, 0, 20)
+
+[node name="rocks-sand-b3" parent="Nature" instance=ExtResource("19_n43st")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.5, 0, 36.25)
+
+[node name="patch-sand-foliage2" parent="Nature" instance=ExtResource("20_31viq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.5, 0, 26.5)
+
+[node name="patch-sand-foliage3" parent="Nature" instance=ExtResource("20_31viq")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 1.5, 0, 27.5)
+
+[node name="rocks-sand-a2" parent="Nature" instance=ExtResource("21_0jrps")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.25, 0, 9.5)
+
+[node name="rocks-sand-a3" parent="Nature" instance=ExtResource("21_0jrps")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -33.75, 0, 21.75)
+
+[node name="rocks-sand-a4" parent="Nature" instance=ExtResource("21_0jrps")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 39.75, 0, 30)
+
+[node name="rock-flat2" parent="Nature" instance=ExtResource("22_bql38")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -0.5, 0, 42)
+
+[node name="resource-stone-large2" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 17.25)
+
+[node name="resource-stone-large3" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(2.5, 0, -4.33013, 0, 5, 0, 4.33013, 0, 2.5, -4.5, 0, 34.25)
+
+[node name="resource-stone-large4" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(4.82963, 0, -1.2941, 0, 5, 0, 1.2941, 0, 4.82963, 10.75, 0, 29.25)
+
+[node name="resource-stone-large5" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(2.5, 0, -4.33013, 0, 5, 0, 4.33013, 0, 2.5, 29.5, 0, 11.5)
+
+[node name="resource-stone-large6" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(4.33013, 0, -2.5, 0, 5, 0, 2.5, 0, 4.33013, 13.5, 0, 3.25)
+
+[node name="resource-stone-large7" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(3.53553, 0, -3.53553, 0, 5, 0, 3.53553, 0, 3.53553, -7.75, 0, 11)
+
+[node name="resource-stone-large9" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(5, 0, -7.15256e-07, 0, 5, 0, 7.15256e-07, 0, 5, -28.75, 0, 35.75)
+
+[node name="resource-stone-large10" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(4.33013, 0, -2.5, 0, 5, 0, 2.5, 0, 4.33013, -27.25, 0, 44.5)
+
+[node name="resource-stone-large11" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(2.5, 0, -4.33013, 0, 5, 0, 4.33013, 0, 2.5, -39.75, 0, 43.75)
+
+[node name="resource-stone-large12" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(2.5, 0, -4.33013, 0, 5, 0, 4.33013, 0, 2.5, -33.75, 0, 29.75)
+
+[node name="resource-stone-large13" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(4.82963, 0, -1.2941, 0, 5, 0, 1.2941, 0, 4.82963, -43, 0, 9)
+
+[node name="resource-stone-large14" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(3.53553, 0, -3.53553, 0, 5, 0, 3.53553, 0, 3.53553, -37, 0, 14.75)
+
+[node name="resource-stone-large15" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(3.53553, 0, -3.53553, 0, 5, 0, 3.53553, 0, 3.53553, -44.25, 0, 30.75)
+
+[node name="resource-stone-large16" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(3.53553, 0, -3.53553, 0, 5, 0, 3.53553, 0, 3.53553, -24.75, 0, 18.25)
+
+[node name="resource-stone-large17" parent="Nature" instance=ExtResource("23_yw50k")]
+transform = Transform3D(4.82963, 0, 1.29409, 0, 5, 0, -1.29409, 0, 4.82963, -22.5, 0, 7)
+
+[node name="rock-flat3" parent="Nature" instance=ExtResource("22_bql38")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -29.75, 0, 13)
+
+[node name="rock-flat4" parent="Nature" instance=ExtResource("22_bql38")]
+transform = Transform3D(-3.8637, 0, -1.03528, 0, 4, 0, 1.03528, 0, -3.8637, -2.5, 0, 6.75)
+
+[node name="rock-flat5" parent="Nature" instance=ExtResource("22_bql38")]
+transform = Transform3D(-2, 0, -3.4641, 0, 4, 0, 3.4641, 0, -2, 30.5, 0, 21.5)
+
+[node name="rock-flat6" parent="Nature" instance=ExtResource("22_bql38")]
+transform = Transform3D(-3.4641, 0, -2, 0, 4, 0, 2, 0, -3.4641, 39.75, 0, 41.25)
+
+[node name="rocks-sand-b4" parent="Nature" instance=ExtResource("19_n43st")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 38.25, 0, 15.75)
+
+[node name="Tower" parent="." instance=ExtResource("24_4dr4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, 19.5)
+
+[node name="Terrain Mesh Optimized" parent="." instance=ExtResource("25_lhwap")]

@@ -1,8 +1,6 @@
-[gd_scene load_steps=28 format=4 uid="uid://bvcp7ni2l6piq"]
+[gd_scene load_steps=27 format=4 uid="uid://bvcp7ni2l6piq"]
 
-[ext_resource type="PackedScene" uid="uid://brnxlcl6div5l" path="res://Scene/World/[03] Badlands/Terrain Mesh.tscn" id="1_4vvjr"]
 [ext_resource type="PackedScene" uid="uid://ca4or0l5n0eqd" path="res://Assets/Kenny Survival Kit/floor-old.glb" id="2_gxgke"]
-[ext_resource type="PackedScene" uid="uid://c2gqk5vm8kai4" path="res://Scene/Vehicles Paths.tscn" id="2_wun2u"]
 [ext_resource type="Texture2D" uid="uid://cd6bbmbxufyss" path="res://Assets/Farm kit/Color_Palette_01.png" id="4_51tt7"]
 [ext_resource type="ArrayMesh" uid="uid://brn0r0382wj8e" path="res://Assets/Rocks Kit/RocksPack_Cube_101.res" id="5_r1ajb"]
 [ext_resource type="ArrayMesh" uid="uid://bx6qbm4oj1s80" path="res://Assets/Rocks Kit/RocksPack_Cube_100.res" id="6_trl4o"]
@@ -24,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://blp6ex87kfa1t" path="res://Assets/Kenny Survival Kit/structure-floor.glb" id="21_canvl"]
 [ext_resource type="PackedScene" uid="uid://bsp6i033jm2ck" path="res://Assets/KayKit Nature/Tree_Bare_2_A_Color1.gltf" id="24_mhxjk"]
 [ext_resource type="PackedScene" uid="uid://dkamuqi5ev1so" path="res://Assets/KayKit Nature/Tree_Bare_2_B_Color1.gltf" id="25_h0dbt"]
+[ext_resource type="PackedScene" uid="uid://brnxlcl6div5l" path="res://Scene/World/[03] Badlands/Terrain Mesh.tscn" id="25_mhxjk"]
 [ext_resource type="ArrayMesh" uid="uid://duec0q1n0fpgx" path="res://Assets/Rocks Kit/RocksPack_Cube_095.res" id="29_c6jva"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4of3l"]
@@ -54,11 +53,6 @@ _surfaces = [{
 blend_shape_mode = 0
 
 [node name="Badlands" type="Node3D"]
-
-[node name="VehiclesPaths" parent="." instance=ExtResource("2_wun2u")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -238)
-
-[node name="TerrainMesh" parent="." instance=ExtResource("1_4vvjr")]
 
 [node name="WoodenBridge" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 26)
@@ -227,71 +221,75 @@ skeleton = NodePath("../..")
 [node name="structure-floor2" parent="Mines" instance=ExtResource("21_canvl")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 21, 0, 38.5)
 
-[node name="Tree_Bare_2_A_Color12" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Trees" type="Node3D" parent="."]
+
+[node name="Tree_Bare_2_A_Color12" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.53033, 0, 0.53033, 0, 0.75, 0, -0.53033, 0, 0.53033, -11.75, 0, 20)
 
-[node name="Tree_Bare_2_A_Color13" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color13" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.649519, 0, -0.375, 0, 0.75, 0, 0.375, 0, 0.649519, 1.25, 0, 8.25)
 
-[node name="Tree_Bare_2_A_Color17" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color17" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.75, 0, -2.98023e-08, 0, 0.75, 0, 2.98023e-08, 0, 0.75, 14.75, 0, 32.75)
 
-[node name="Tree_Bare_2_A_Color25" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color25" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.724444, 0, 0.194114, 0, 0.75, 0, -0.194114, 0, 0.724444, 38.25, 0, 40.75)
 
-[node name="Tree_Bare_2_A_Color18" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color18" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(-6.25859e-08, 0, -0.75, 0, 0.75, 0, 0.75, 0, -6.25859e-08, 12.5, 0, 45.5)
 
-[node name="Tree_Bare_2_A_Color19" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color19" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.53033, 0, -0.53033, 0, 0.75, 0, 0.53033, 0, 0.53033, 28.5, 0, 21.25)
 
-[node name="Tree_Bare_2_A_Color20" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color20" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.194114, 0, -0.724445, 0, 0.75, 0, 0.724445, 0, 0.194114, 37, 0, 7)
 
-[node name="Tree_Bare_2_A_Color21" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color21" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(-0.649519, 0, -0.375, 0, 0.75, 0, 0.375, 0, -0.649519, 17.5, 0, 2.75)
 
-[node name="Tree_Bare_2_A_Color22" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color22" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(-0.724444, 0, 0.194114, 0, 0.75, 0, -0.194114, 0, -0.724444, -29.25, 0, 14)
 
-[node name="Tree_Bare_2_A_Color23" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color23" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(-0.75, 0, 7.45058e-08, 0, 0.75, 0, -7.45058e-08, 0, -0.75, -40.25, 0, 29)
 
-[node name="Tree_Bare_2_A_Color24" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color24" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(-0.724444, 0, 0.194114, 0, 0.75, 0, -0.194114, 0, -0.724444, -42.5, 0, 41.25)
 
-[node name="Tree_Bare_2_A_Color14" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color14" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -4.75, 0, 17.75)
 
-[node name="Tree_Bare_2_A_Color15" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color15" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.649519, 0, -0.375, 0, 0.75, 0, 0.375, 0, 0.649519, -27.75, 0, 36)
 
-[node name="Tree_Bare_2_A_Color16" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color16" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.53033, 0, -0.53033, 0, 0.75, 0, 0.53033, 0, 0.53033, -26.75, 0, 45)
 
-[node name="Tree_Bare_2_B_Color12" parent="." instance=ExtResource("25_h0dbt")]
+[node name="Tree_Bare_2_B_Color12" parent="Trees" instance=ExtResource("25_h0dbt")]
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -34.75, 0, 32.5)
 
-[node name="Tree_Bare_2_B_Color13" parent="." instance=ExtResource("25_h0dbt")]
+[node name="Tree_Bare_2_B_Color13" parent="Trees" instance=ExtResource("25_h0dbt")]
 transform = Transform3D(0.649519, 0, -0.375, 0, 0.75, 0, 0.375, 0, 0.649519, -17.75, 0, 16.5)
 
-[node name="Tree_Bare_2_B_Color14" parent="." instance=ExtResource("25_h0dbt")]
+[node name="Tree_Bare_2_B_Color14" parent="Trees" instance=ExtResource("25_h0dbt")]
 transform = Transform3D(0.75, 0, -8.9407e-08, 0, 0.75, 0, 8.9407e-08, 0, 0.75, -21.5, 0, 7.75)
 
-[node name="Tree_Bare_2_B_Color15" parent="." instance=ExtResource("25_h0dbt")]
+[node name="Tree_Bare_2_B_Color15" parent="Trees" instance=ExtResource("25_h0dbt")]
 transform = Transform3D(0.649519, 0, 0.375, 0, 0.75, 0, -0.375, 0, 0.649519, -43.25, 0, 12.75)
 
-[node name="Tree_Bare_2_B_Color16" parent="." instance=ExtResource("25_h0dbt")]
+[node name="Tree_Bare_2_B_Color16" parent="Trees" instance=ExtResource("25_h0dbt")]
 transform = Transform3D(0.724444, 0, 0.194114, 0, 0.75, 0, -0.194114, 0, 0.724444, 3.75, 0, 15)
 
-[node name="Tree_Bare_2_B_Color17" parent="." instance=ExtResource("25_h0dbt")]
+[node name="Tree_Bare_2_B_Color17" parent="Trees" instance=ExtResource("25_h0dbt")]
 transform = Transform3D(0.75, 0, -2.98023e-08, 0, 0.75, 0, 2.98023e-08, 0, 0.75, 42, 0, 19.5)
 
-[node name="Tree_Bare_2_B_Color18" parent="." instance=ExtResource("25_h0dbt")]
+[node name="Tree_Bare_2_B_Color18" parent="Trees" instance=ExtResource("25_h0dbt")]
 transform = Transform3D(0.649519, 0, 0.375, 0, 0.75, 0, -0.375, 0, 0.649519, 31, 0, 37.25)
 
-[node name="Tree_Bare_2_A_Color26" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color26" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.649519, 0, 0.375, 0, 0.75, 0, -0.375, 0, 0.649519, -4.75, 0, 45)
 
-[node name="Tree_Bare_2_A_Color27" parent="." instance=ExtResource("24_mhxjk")]
+[node name="Tree_Bare_2_A_Color27" parent="Trees" instance=ExtResource("24_mhxjk")]
 transform = Transform3D(0.724444, 0, -0.194114, 0, 0.75, 0, 0.194114, 0, 0.724444, 2.5, 0, 32.5)
+
+[node name="Terrain Mesh Optimized" parent="." instance=ExtResource("25_mhxjk")]
