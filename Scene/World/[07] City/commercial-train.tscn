@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgqvan122bqnc"]
+
+[ext_resource type="PackedScene" uid="uid://ce3ucc6e4ando" path="res://Assets/Kenny Train Kit/train-carriage-container-light-red.gltf" id="1_o4a5p"]
+[ext_resource type="PackedScene" uid="uid://c4vn70aaag73n" path="res://Assets/Kenny Train Kit/train-diesel-b-red.gltf" id="2_rbb1n"]
+[ext_resource type="PackedScene" uid="uid://cgga3ifjij3aj" path="res://Assets/Kenny Train Kit/train-carriage-tank-large-red.gltf" id="3_x552a"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="train-carriage-container-red2" parent="." instance=ExtResource("1_o4a5p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.55)
+
+[node name="train-carriage-container-red3" parent="." instance=ExtResource("1_o4a5p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.95)
+
+[node name="train-diesel-b2" parent="." instance=ExtResource("2_rbb1n")]
+
+[node name="train-carriage-tank2" parent="." instance=ExtResource("3_x552a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.25)

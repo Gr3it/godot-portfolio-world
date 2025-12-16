@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://by2if1dys8tdy"]
+
+[ext_resource type="PackedScene" uid="uid://c6338jfnqxwu4" path="res://Assets/Kenny Train Kit/railroad-straight.glb" id="1_ck5iw"]
+
+[node name="Railroad" type="Node3D"]
+
+[node name="railroad-damaged-straight3" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48, 1, 0)
+
+[node name="railroad-damaged-straight4" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 1, 0)
+
+[node name="railroad-damaged-straight5" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 40, 1, 0)
+
+[node name="railroad-damaged-straight6" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 36, 1, 0)
+
+[node name="railroad-damaged-straight7" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 32, 1, 0)
+
+[node name="railroad-damaged-straight8" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 28, 1, 0)
+
+[node name="railroad-damaged-straight11" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12, 1, 0)
+
+[node name="railroad-damaged-straight26" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 16, 1, 0)
+
+[node name="railroad-damaged-straight27" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20, 1, 0)
+
+[node name="railroad-damaged-straight12" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 1, 0)
+
+[node name="railroad-damaged-straight13" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 1, 0)
+
+[node name="railroad-damaged-straight14" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 1, 0)
+
+[node name="railroad-damaged-straight15" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 1, 0)
+
+[node name="railroad-damaged-straight16" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8, 1, 0)
+
+[node name="railroad-damaged-straight17" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -12, 1, 0)
+
+[node name="railroad-damaged-straight18" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16, 1, 0)
+
+[node name="railroad-damaged-straight19" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -20, 1, 0)
+
+[node name="railroad-damaged-straight20" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -24, 1, 0)
+
+[node name="railroad-damaged-straight21" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -28, 1, 0)
+
+[node name="railroad-damaged-straight22" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -32, 1, 0)
+
+[node name="railroad-damaged-straight23" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -36, 1, 0)
+
+[node name="railroad-damaged-straight24" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -40, 1, 0)
+
+[node name="railroad-damaged-straight25" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -44, 1, 0)
+
+[node name="railroad-damaged-straight9" parent="." instance=ExtResource("1_ck5iw")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, 1, 0)

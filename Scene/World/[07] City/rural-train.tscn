@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://gs2lxfx41t16"]
+
+[ext_resource type="PackedScene" uid="uid://dc1ybk1xb0pgh" path="res://Assets/Kenny Train Kit/train-electric-double-a-red.gltf" id="1_vcpci"]
+[ext_resource type="PackedScene" uid="uid://b2p4elew5cnhr" path="res://Assets/Kenny Train Kit/train-electric-double-b-red.gltf" id="2_n73nf"]
+[ext_resource type="PackedScene" uid="uid://dbtu4pgudpyyf" path="res://Assets/Kenny Train Kit/train-connector.glb" id="3_5xk0n"]
+[ext_resource type="PackedScene" uid="uid://b07hhr3jdkaf8" path="res://Assets/Kenny Train Kit/train-electric-double-c-red.gltf" id="4_goue4"]
+
+[node name="Rural-train" type="Node3D"]
+
+[node name="train-electric-double-a-red" parent="." instance=ExtResource("1_vcpci")]
+
+[node name="train-electric-double-b-red" parent="." instance=ExtResource("2_n73nf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.5)
+
+[node name="train-electric-double-b-red2" parent="." instance=ExtResource("2_n73nf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.7)
+
+[node name="train-connector2" parent="." instance=ExtResource("3_5xk0n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -1.25)
+
+[node name="train-connector3" parent="." instance=ExtResource("3_5xk0n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -3.825)
+
+[node name="train-connector4" parent="." instance=ExtResource("3_5xk0n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -6.42)
+
+[node name="train-electric-double-c-red" parent="." instance=ExtResource("4_goue4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.1)

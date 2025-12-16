@@ -1,0 +1,594 @@
+[gd_scene load_steps=8 format=3 uid="uid://cwi0y4l1c63xe"]
+
+[ext_resource type="PackedScene" uid="uid://by2if1dys8tdy" path="res://Scene/World/[07] City/railroad.tscn" id="1_mjt7k"]
+[ext_resource type="PackedScene" uid="uid://dsv5y5n7a6bh0" path="res://Scene/World/[07] City/rail-straight.tscn" id="2_880ij"]
+[ext_resource type="PackedScene" uid="uid://c8so7c7a4rlw5" path="res://Assets/Kenney City Roads  Kit/tile-low.glb" id="3_ryg4m"]
+[ext_resource type="PackedScene" uid="uid://bajy2y3cuduel" path="res://Assets/Kenney Graveyard Kit/iron-fence-border-gray.gltf" id="4_sao51"]
+[ext_resource type="PackedScene" uid="uid://dwrde7xcym0de" path="res://Assets/Kenney Graveyard Kit/iron-fence-border-column-gray.gltf" id="5_adick"]
+[ext_resource type="PackedScene" uid="uid://dlsy7q4d8mb7t" path="res://Assets/Kenney City Kit Suburban/path-stones-long.glb" id="6_ho8ic"]
+[ext_resource type="PackedScene" uid="uid://d07tibmswhpfp" path="res://Assets/Kenney City Kit Suburban/planter.glb" id="7_7qsfl"]
+
+[node name="railroad" type="Node3D"]
+
+[node name="railroad" parent="." instance=ExtResource("1_mjt7k")]
+
+[node name="rail-straight" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12, 0)
+
+[node name="Node3D" parent="rail-straight" instance=ExtResource("2_880ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="Node3D10" parent="rail-straight" instance=ExtResource("2_880ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0, 0)
+
+[node name="Node3D14" type="Node3D" parent="rail-straight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+metadata/_edit_group_ = true
+
+[node name="tile-low2" parent="rail-straight/Node3D14" instance=ExtResource("3_ryg4m")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+
+[node name="Fences" type="Node3D" parent="rail-straight/Node3D14"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.12, 1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray" parent="rail-straight/Node3D14/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray2" parent="rail-straight/Node3D14/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="rail-straight/Node3D14/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray4" parent="rail-straight/Node3D14/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5)
+
+[node name="Fences2" type="Node3D" parent="rail-straight/Node3D14"]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, 0, 0.12, -1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray2" parent="rail-straight/Node3D14/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="rail-straight/Node3D14/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray4" parent="rail-straight/Node3D14/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5)
+
+[node name="iron-fence-border-column-gray" parent="rail-straight/Node3D14/Fences2" instance=ExtResource("5_adick")]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1.5, 0, -0.4)
+
+[node name="Path" type="Node3D" parent="rail-straight/Node3D14"]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, 2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="rail-straight/Node3D14/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="rail-straight/Node3D14/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="rail-straight/Node3D14/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Path2" type="Node3D" parent="rail-straight/Node3D14"]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, -2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="rail-straight/Node3D14/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="rail-straight/Node3D14/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="rail-straight/Node3D14/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Plants" type="Node3D" parent="rail-straight/Node3D14"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.12, 1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="rail-straight/Node3D14/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="rail-straight/Node3D14/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="rail-straight/Node3D14/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="rail-straight/Node3D14/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="rail-straight/Node3D14/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="rail-straight/Node3D14/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Plants2" type="Node3D" parent="rail-straight/Node3D14"]
+transform = Transform3D(-2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, 0, 0.12, -1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="rail-straight/Node3D14/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="rail-straight/Node3D14/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="rail-straight/Node3D14/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="rail-straight/Node3D14/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="rail-straight/Node3D14/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="rail-straight/Node3D14/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Node3D11" parent="rail-straight" instance=ExtResource("2_880ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 0)
+
+[node name="Node3D15" type="Node3D" parent="rail-straight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, 0)
+metadata/_edit_group_ = true
+
+[node name="tile-low2" parent="rail-straight/Node3D15" instance=ExtResource("3_ryg4m")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+
+[node name="Fences" type="Node3D" parent="rail-straight/Node3D15"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.12, 1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray" parent="rail-straight/Node3D15/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray2" parent="rail-straight/Node3D15/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="rail-straight/Node3D15/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray4" parent="rail-straight/Node3D15/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5)
+
+[node name="Fences2" type="Node3D" parent="rail-straight/Node3D15"]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, 0, 0.12, -1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-column-gray2" parent="rail-straight/Node3D15/Fences2" instance=ExtResource("5_adick")]
+transform = Transform3D(1, 0, -6.3573e-08, 0, 1, 0, 6.3573e-08, 0, 1, 1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray" parent="rail-straight/Node3D15/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray2" parent="rail-straight/Node3D15/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="rail-straight/Node3D15/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="Path" type="Node3D" parent="rail-straight/Node3D15"]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, 2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="rail-straight/Node3D15/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="rail-straight/Node3D15/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="rail-straight/Node3D15/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Path2" type="Node3D" parent="rail-straight/Node3D15"]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, -2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="rail-straight/Node3D15/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="rail-straight/Node3D15/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="rail-straight/Node3D15/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Plants" type="Node3D" parent="rail-straight/Node3D15"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.12, 1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="rail-straight/Node3D15/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="rail-straight/Node3D15/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="rail-straight/Node3D15/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="rail-straight/Node3D15/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="rail-straight/Node3D15/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="rail-straight/Node3D15/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Plants2" type="Node3D" parent="rail-straight/Node3D15"]
+transform = Transform3D(-2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, 0, 0.12, -1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="rail-straight/Node3D15/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="rail-straight/Node3D15/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="rail-straight/Node3D15/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="rail-straight/Node3D15/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="rail-straight/Node3D15/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="rail-straight/Node3D15/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Node3D16" type="Node3D" parent="rail-straight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0)
+
+[node name="tile-low2" parent="rail-straight/Node3D16" instance=ExtResource("3_ryg4m")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+
+[node name="Fences" type="Node3D" parent="rail-straight/Node3D16"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.12, 1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray" parent="rail-straight/Node3D16/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray2" parent="rail-straight/Node3D16/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="rail-straight/Node3D16/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray4" parent="rail-straight/Node3D16/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5)
+
+[node name="Path" type="Node3D" parent="rail-straight/Node3D16"]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, 2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="rail-straight/Node3D16/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="rail-straight/Node3D16/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="rail-straight/Node3D16/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Plants" type="Node3D" parent="rail-straight/Node3D16"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.12, 1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="rail-straight/Node3D16/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="rail-straight/Node3D16/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="rail-straight/Node3D16/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="rail-straight/Node3D16/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="rail-straight/Node3D16/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="rail-straight/Node3D16/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Node3D12" parent="rail-straight" instance=ExtResource("2_880ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 0, 0)
+
+[node name="Node3D13" parent="rail-straight" instance=ExtResource("2_880ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 0, 0)
+
+[node name="Node3D2" parent="rail-straight" instance=ExtResource("2_880ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="Node3D3" type="Node3D" parent="rail-straight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="tile-low2" parent="rail-straight/Node3D3" instance=ExtResource("3_ryg4m")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+
+[node name="Fences" type="Node3D" parent="rail-straight/Node3D3"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.12, 1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray2" parent="rail-straight/Node3D3/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="rail-straight/Node3D3/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray4" parent="rail-straight/Node3D3/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5)
+
+[node name="iron-fence-border-column-gray2" parent="rail-straight/Node3D3/Fences" instance=ExtResource("5_adick")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -1.5, 0, -0.4)
+
+[node name="Fences2" type="Node3D" parent="rail-straight/Node3D3"]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, 0, 0.12, -1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray" parent="rail-straight/Node3D3/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray2" parent="rail-straight/Node3D3/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="rail-straight/Node3D3/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray4" parent="rail-straight/Node3D3/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5)
+
+[node name="Path" type="Node3D" parent="rail-straight/Node3D3"]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, 2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="rail-straight/Node3D3/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="rail-straight/Node3D3/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="rail-straight/Node3D3/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Path2" type="Node3D" parent="rail-straight/Node3D3"]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, -2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="rail-straight/Node3D3/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="rail-straight/Node3D3/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="rail-straight/Node3D3/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Plants" type="Node3D" parent="rail-straight/Node3D3"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.12, 1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="rail-straight/Node3D3/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="rail-straight/Node3D3/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="rail-straight/Node3D3/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="rail-straight/Node3D3/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="rail-straight/Node3D3/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="rail-straight/Node3D3/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Plants2" type="Node3D" parent="rail-straight/Node3D3"]
+transform = Transform3D(-2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, 0, 0.12, -1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="rail-straight/Node3D3/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="rail-straight/Node3D3/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="rail-straight/Node3D3/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="rail-straight/Node3D3/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="rail-straight/Node3D3/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="rail-straight/Node3D3/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Node3D4" type="Node3D" parent="rail-straight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 0)
+
+[node name="tile-low2" parent="rail-straight/Node3D4" instance=ExtResource("3_ryg4m")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+
+[node name="Fences2" type="Node3D" parent="rail-straight/Node3D4"]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, 0, 0.12, -1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray" parent="rail-straight/Node3D4/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray2" parent="rail-straight/Node3D4/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="rail-straight/Node3D4/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray4" parent="rail-straight/Node3D4/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5)
+
+[node name="Path2" type="Node3D" parent="rail-straight/Node3D4"]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, -2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="rail-straight/Node3D4/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="rail-straight/Node3D4/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="rail-straight/Node3D4/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Plants2" type="Node3D" parent="rail-straight/Node3D4"]
+transform = Transform3D(-2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, 0, 0.12, -1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="rail-straight/Node3D4/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="rail-straight/Node3D4/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="rail-straight/Node3D4/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="rail-straight/Node3D4/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="rail-straight/Node3D4/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="rail-straight/Node3D4/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Node3D5" type="Node3D" parent="rail-straight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, 0)
+
+[node name="tile-low2" parent="rail-straight/Node3D5" instance=ExtResource("3_ryg4m")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+
+[node name="Fences" type="Node3D" parent="rail-straight/Node3D5"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.12, 1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray" parent="rail-straight/Node3D5/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray2" parent="rail-straight/Node3D5/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="rail-straight/Node3D5/Fences" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-column-gray" parent="rail-straight/Node3D5/Fences" instance=ExtResource("5_adick")]
+transform = Transform3D(1, 0, 6.3573e-08, 0, 1, 0, -6.3573e-08, 0, 1, 1.5, 0, 0.5)
+
+[node name="Fences2" type="Node3D" parent="rail-straight/Node3D5"]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, 0, 0.12, -1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray" parent="rail-straight/Node3D5/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray2" parent="rail-straight/Node3D5/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="rail-straight/Node3D5/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray4" parent="rail-straight/Node3D5/Fences2" instance=ExtResource("4_sao51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5)
+
+[node name="Path" type="Node3D" parent="rail-straight/Node3D5"]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, 2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="rail-straight/Node3D5/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="rail-straight/Node3D5/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="rail-straight/Node3D5/Path" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Path2" type="Node3D" parent="rail-straight/Node3D5"]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, -2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="rail-straight/Node3D5/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="rail-straight/Node3D5/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="rail-straight/Node3D5/Path2" instance=ExtResource("6_ho8ic")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Plants" type="Node3D" parent="rail-straight/Node3D5"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.12, 1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="rail-straight/Node3D5/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="rail-straight/Node3D5/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="rail-straight/Node3D5/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="rail-straight/Node3D5/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="rail-straight/Node3D5/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="rail-straight/Node3D5/Plants" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Plants2" type="Node3D" parent="rail-straight/Node3D5"]
+transform = Transform3D(-2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, 0, 0.12, -1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="rail-straight/Node3D5/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="rail-straight/Node3D5/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="rail-straight/Node3D5/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="rail-straight/Node3D5/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="rail-straight/Node3D5/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="rail-straight/Node3D5/Plants2" instance=ExtResource("7_7qsfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Node3D6" parent="rail-straight" instance=ExtResource("2_880ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, 0)
+
+[node name="Node3D7" parent="rail-straight" instance=ExtResource("2_880ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, 0)
+
+[node name="Node3D8" parent="rail-straight" instance=ExtResource("2_880ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 0)
+
+[node name="Node3D9" parent="rail-straight" instance=ExtResource("2_880ij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 0)

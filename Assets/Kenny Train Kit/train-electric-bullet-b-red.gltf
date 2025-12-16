@@ -8,33 +8,13 @@
 		{
 			"name":"Scene",
 			"nodes":[
-				0,
-				1,
-				4
+				2
 			]
 		}
 	],
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"wheels-front",
-			"translation":[
-				0,
-				0.35949936509132385,
-				0.35048937797546387
-			]
-		},
-		{
-			"mesh":1,
-			"name":"wheels-back",
-			"translation":[
-				0,
-				0.35949936509132385,
-				-0.6495105624198914
-			]
-		},
-		{
-			"mesh":2,
 			"name":"wheels-back.001",
 			"translation":[
 				0,
@@ -43,7 +23,7 @@
 			]
 		},
 		{
-			"mesh":3,
+			"mesh":1,
 			"name":"wheels-front.001",
 			"translation":[
 				0,
@@ -53,30 +33,20 @@
 		},
 		{
 			"children":[
-				2,
-				3
+				0,
+				1
 			],
-			"mesh":4,
+			"mesh":2,
 			"name":"train-electric-bullet-b"
 		}
 	],
 	"materials":[
 		{
 			"doubleSided":true,
-			"name":"colormap.003",
+			"name":"colormap.001",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
-				},
-				"metallicFactor":0
-			}
-		},
-		{
-			"doubleSided":true,
-			"name":"colormap.004",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":1
 				},
 				"metallicFactor":0
 			}
@@ -84,7 +54,7 @@
 	],
 	"meshes":[
 		{
-			"name":"wheels-front.002",
+			"name":"wheels-back.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -98,7 +68,7 @@
 			]
 		},
 		{
-			"name":"wheels-back.002",
+			"name":"wheels-front.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -112,7 +82,7 @@
 			]
 		},
 		{
-			"name":"wheels-back.003",
+			"name":"train-electric-bullet-b.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -120,45 +90,13 @@
 						"NORMAL":8,
 						"TEXCOORD_0":9
 					},
-					"indices":3,
-					"material":1
-				}
-			]
-		},
-		{
-			"name":"wheels-front.003",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":10,
-						"NORMAL":11,
-						"TEXCOORD_0":12
-					},
-					"indices":3,
-					"material":1
-				}
-			]
-		},
-		{
-			"name":"train-electric-bullet-b",
-			"primitives":[
-				{
-					"attributes":{
-						"POSITION":13,
-						"NORMAL":14,
-						"TEXCOORD_0":15
-					},
-					"indices":16,
-					"material":1
+					"indices":10,
+					"material":0
 				}
 			]
 		}
 	],
 	"textures":[
-		{
-			"sampler":0,
-			"source":0
-		},
 		{
 			"sampler":0,
 			"source":0
@@ -179,12 +117,12 @@
 			"max":[
 				0.49149996042251587,
 				0,
-				0.3805960416793823
+				0.3805958032608032
 			],
 			"min":[
 				-0.49149996042251587,
 				-0.35949936509132385,
-				-0.3805960416793823
+				-0.3805958032608032
 			],
 			"type":"VEC3"
 		},
@@ -213,12 +151,12 @@
 			"max":[
 				0.49149996042251587,
 				0,
-				0.3805960416793823
+				0.3805958032608032
 			],
 			"min":[
 				-0.49149996042251587,
 				-0.35949936509132385,
-				-0.3805960416793823
+				-0.3805958032608032
 			],
 			"type":"VEC3"
 		},
@@ -237,62 +175,6 @@
 		{
 			"bufferView":7,
 			"componentType":5126,
-			"count":532,
-			"max":[
-				0.49149996042251587,
-				0,
-				0.3805958032608032
-			],
-			"min":[
-				-0.49149996042251587,
-				-0.35949936509132385,
-				-0.3805958032608032
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":8,
-			"componentType":5126,
-			"count":532,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":9,
-			"componentType":5126,
-			"count":532,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":10,
-			"componentType":5126,
-			"count":532,
-			"max":[
-				0.49149996042251587,
-				0,
-				0.3805958032608032
-			],
-			"min":[
-				-0.49149996042251587,
-				-0.35949936509132385,
-				-0.3805958032608032
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":11,
-			"componentType":5126,
-			"count":532,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":12,
-			"componentType":5126,
-			"count":532,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":13,
-			"componentType":5126,
 			"count":1292,
 			"max":[
 				0.6500000357627869,
@@ -307,19 +189,19 @@
 			"type":"VEC3"
 		},
 		{
-			"bufferView":14,
+			"bufferView":8,
 			"componentType":5126,
 			"count":1292,
 			"type":"VEC3"
 		},
 		{
-			"bufferView":15,
+			"bufferView":9,
 			"componentType":5126,
 			"count":1292,
 			"type":"VEC2"
 		},
 		{
-			"bufferView":16,
+			"bufferView":10,
 			"componentType":5123,
 			"count":2286,
 			"type":"SCALAR"
@@ -370,62 +252,26 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":6384,
+			"byteLength":15504,
 			"byteOffset":35944,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":6384,
-			"byteOffset":42328,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":4256,
-			"byteOffset":48712,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":6384,
-			"byteOffset":52968,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":6384,
-			"byteOffset":59352,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":4256,
-			"byteOffset":65736,
-			"target":34962
-		},
-		{
-			"buffer":0,
 			"byteLength":15504,
-			"byteOffset":69992,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":15504,
-			"byteOffset":85496,
+			"byteOffset":51448,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":10336,
-			"byteOffset":101000,
+			"byteOffset":66952,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":4572,
-			"byteOffset":111336,
+			"byteOffset":77288,
 			"target":34963
 		}
 	],
@@ -437,7 +283,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":115908,
+			"byteLength":81860,
 			"uri":"train-electric-bullet-b-red.bin"
 		}
 	]

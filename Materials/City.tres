@@ -2,4 +2,4 @@
 
 [resource]
 resource_name = "BrownDark"
-albedo_color = Color(0.627451, 0.658824, 0.717647, 1)
+albedo_color = Color(0.627451, 0.658824, 0.788235, 1)

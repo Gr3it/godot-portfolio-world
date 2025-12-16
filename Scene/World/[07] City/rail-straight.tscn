@@ -1,0 +1,113 @@
+[gd_scene load_steps=5 format=3 uid="uid://dsv5y5n7a6bh0"]
+
+[ext_resource type="PackedScene" uid="uid://c8so7c7a4rlw5" path="res://Assets/Kenney City Roads  Kit/tile-low.glb" id="1_usx0w"]
+[ext_resource type="PackedScene" uid="uid://bajy2y3cuduel" path="res://Assets/Kenney Graveyard Kit/iron-fence-border-gray.gltf" id="2_t2txt"]
+[ext_resource type="PackedScene" uid="uid://dlsy7q4d8mb7t" path="res://Assets/Kenney City Kit Suburban/path-stones-long.glb" id="3_mspnh"]
+[ext_resource type="PackedScene" uid="uid://d07tibmswhpfp" path="res://Assets/Kenney City Kit Suburban/planter.glb" id="4_g0uft"]
+
+[node name="rail-straight" type="Node3D"]
+
+[node name="tile-low2" parent="." instance=ExtResource("1_usx0w")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+
+[node name="Fences" type="Node3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.12, 1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray" parent="Fences" instance=ExtResource("2_t2txt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray2" parent="Fences" instance=ExtResource("2_t2txt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="Fences" instance=ExtResource("2_t2txt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray4" parent="Fences" instance=ExtResource("2_t2txt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5)
+
+[node name="Fences2" type="Node3D" parent="."]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, 0, 0.12, -1)
+metadata/_edit_group_ = true
+
+[node name="iron-fence-border-gray" parent="Fences2" instance=ExtResource("2_t2txt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="iron-fence-border-gray2" parent="Fences2" instance=ExtResource("2_t2txt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray3" parent="Fences2" instance=ExtResource("2_t2txt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="iron-fence-border-gray4" parent="Fences2" instance=ExtResource("2_t2txt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5)
+
+[node name="Path" type="Node3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, 2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="Path" instance=ExtResource("3_mspnh")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="Path" instance=ExtResource("3_mspnh")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="Path" instance=ExtResource("3_mspnh")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Path2" type="Node3D" parent="."]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 0, 0.12, -2.5)
+metadata/_edit_group_ = true
+
+[node name="path-stones-long3" parent="Path2" instance=ExtResource("3_mspnh")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0.4)
+
+[node name="path-stones-long4" parent="Path2" instance=ExtResource("3_mspnh")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
+
+[node name="path-stones-long5" parent="Path2" instance=ExtResource("3_mspnh")]
+transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, -2.98023e-08, 0, -0.4)
+
+[node name="Plants" type="Node3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.12, 1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="Plants" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="Plants" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="Plants" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="Plants" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="Plants" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="Plants" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+
+[node name="Plants2" type="Node3D" parent="."]
+transform = Transform3D(-2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, 0, 0.12, -1.75)
+metadata/_edit_group_ = true
+
+[node name="planter2" parent="Plants2" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 0)
+
+[node name="planter3" parent="Plants2" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+
+[node name="planter4" parent="Plants2" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+
+[node name="planter5" parent="Plants2" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+
+[node name="planter6" parent="Plants2" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+
+[node name="planter7" parent="Plants2" instance=ExtResource("4_g0uft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)

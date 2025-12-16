@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://stfbtoi70a47" path="res://Scene/spaceship.tscn" id="3_80rgt"]
 [ext_resource type="PackedScene" uid="uid://r1qceb0uh4t" path="res://Scene/World/[06] Skylands/rocket.tscn" id="4_5d11k"]
 [ext_resource type="PackedScene" uid="uid://ctix5iyd280um" path="res://Assets/Kenny Watercraft Kit/ship-ocean-liner-small.glb" id="5_km35t"]
-[ext_resource type="PackedScene" uid="uid://bc8evd1ibp8e7" path="res://Scene/train.tscn" id="6_k3jx3"]
+[ext_resource type="PackedScene" uid="uid://bc8evd1ibp8e7" path="res://Scene/World/[07] City/train.tscn" id="6_k3jx3"]
 [ext_resource type="PackedScene" uid="uid://b2h0gfec2ugdv" path="res://Assets/KayKit Nature/Rock_1_J_Color1.gltf" id="7_aq0br"]
 [ext_resource type="PackedScene" uid="uid://ctnosrqb8emue" path="res://Assets/KayKit Nature/Rock_1_K_Color1.gltf" id="8_c3b46"]
 [ext_resource type="PackedScene" uid="uid://c00hy1lbjch2p" path="res://Assets/KayKit Medieval Hex/building_barracks_blue.gltf" id="9_mwwke"]
@@ -41,7 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://2hbo2a1holmf" path="res://Assets/Kenny Pirates Kit/rocks-c.glb" id="39_lrjfv"]
 [ext_resource type="PackedScene" uid="uid://clsh6eoc8h1oc" path="res://Assets/Kenny Pirates Kit/rocks-b.glb" id="40_0tu8x"]
 [ext_resource type="PackedScene" uid="uid://dihvr4eepu1n0" path="res://Assets/Kenny Pirates Kit/rocks-a.glb" id="41_xi3ic"]
-[ext_resource type="Texture2D" uid="uid://bmd1uc8ud1c6u" path="res://Assets/kenney city kit commercial/Textures/colormap_base.png" id="42_i8pql"]
+[ext_resource type="Texture2D" uid="uid://bmd1uc8ud1c6u" path="res://Assets/kenney city kit commercial/Textures/colormap.png" id="42_i8pql"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0f1f8"]
 transparency = 1
